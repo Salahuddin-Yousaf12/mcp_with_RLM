@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reddit Posts Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔍 Reddit Posts Viewer</h1>
+            <p class="subtitle">Smart relevance filtering • Sorted by score</p>
+        </header>
+
+        <div class="controls">
+            <div class="file-loader">
+                <label for="jsonFile">Load JSON File:</label>
+                <input type="file" id="jsonFile" accept=".json">
+            </div>
+            <div class="stats" id="stats"></div>
+        </div>
+
+        <div class="view-toggle">
+            <button id="showAllBtn" class="toggle-btn active">Show All Posts</button>
+            <button id="showFilteredBtn" class="toggle-btn">Show Filtered Only</button>
+        </div>
+
+        <div class="query-section">
+            <label for="queryInput">Search Query (filters by title & similar subreddits):</label>
+            <div class="query-input-wrapper">
+                <input type="text" id="queryInput" placeholder="e.g., elden ring, python tutorial, machine learning...">
+                <button id="filterBtn" class="btn-filter">Filter Posts</button>
+                <button id="clearFilterBtn" class="btn-clear">Clear Filter</button>
+            </div>
+            <p class="query-hint">Posts will be filtered by title match AND grouped by similar subreddit names</p>
+        </div>
+
+        <div class="filter-info" id="filterInfo"></div>
+
+        <div class="posts-container" id="postsContainer">
+            <div class="empty-state">
+                <p>📂 Load a JSON file to view posts</p>
+                <p class="hint">Select a Reddit scraper JSON file from your computer</p>
+            </div>
+        </div>
+
+        <div class="modal" id="postModal">
+            <div class="modal-content">
+                <button class="modal-close" id="modalClose">&times;</button>
+                <div id="modalBody"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
