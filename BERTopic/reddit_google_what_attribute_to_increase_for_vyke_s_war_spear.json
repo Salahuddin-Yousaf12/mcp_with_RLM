@@ -1,0 +1,54 @@
+{
+  "query": "what attribute to increase for vyke's war spear",
+  "source": "google",
+  "scraped_at": "2026-02-24T12:20:44.153241+00:00",
+  "count": 1,
+  "posts": [
+    {
+      "id": "1753s4w",
+      "title": "What’s a good stat spread for a vyke war spear/madness incantation build?",
+      "url": "",
+      "permalink": "https://www.reddit.com/r/Eldenring/comments/1753s4w/whats_a_good_stat_spread_for_a_vyke_war/",
+      "score": 3,
+      "num_comments": 3,
+      "subreddit": "Eldenring",
+      "author": "[deleted]",
+      "created_utc": 1696992752.0,
+      "selftext": "[deleted]",
+      "is_self": true,
+      "flair": "Game Help",
+      "comments": [
+        {
+          "id": "k4gsx4j",
+          "author": "AraithenRain",
+          "body": "Ya gotta have faith-a faith-a faith!\n\nAnd a bit of strength and dex too.",
+          "score": 2,
+          "created_utc": 1697055588.0,
+          "parent_id": "t3_1753s4w",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "k4dey9g",
+          "author": "[deleted]",
+          "body": "An even split",
+          "score": 0,
+          "created_utc": 1696995561.0,
+          "parent_id": "t3_1753s4w",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "k4dqp75",
+          "author": "Waste-Gur2640",
+          "body": "If you'll rely on AoW then faith scaling soft cap is at 50 I think, it functions differently than attack bonus. You have to know what you want to use more. If you want to maximize Vyke's spear then don't go higher than 50 with FTH and put more into dex. Don't forget to use frenzy flame seal. You can start by splitting fth/dex somewhat evenly and see what you'll use the most, normal attacks or AoW or incantations etc. and depending on that you'll choose which attribute to prefer. If this is for pvp then go level 150, and in that case you'll rely much more on spear, both normal attacks and AoW, rather than incantations.",
+          "score": 1,
+          "created_utc": 1697002491.0,
+          "parent_id": "t3_1753s4w",
+          "is_submitter": false,
+          "replies": []
+        }
+      ]
+    }
+  ]
+}

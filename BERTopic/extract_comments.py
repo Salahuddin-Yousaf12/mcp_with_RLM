@@ -4,6 +4,7 @@ Extract Title and Comments from Reddit JSON
 Takes a Reddit scraper JSON file and extracts:
 - Post title
 - All comment bodies (flattened from nested structure)
+- Comments sorted by score (upvotes) in descending order
 
 Usage:
     python extract_comments.py <input_json> [output_json]
@@ -16,38 +17,41 @@ Example:
 import json
 import sys
 from pathlib import Path
-from typing import List
+from typing import List, Tuple
 
 
-def extract_comments_recursive(comments: list) -> List[str]:
+def extract_comments_recursive(comments: list) -> List[Tuple[str, int]]:
     """
-    Recursively extract all comment bodies from nested comment structure.
+    Recursively extract all comment bodies and scores from nested comment structure.
     
     Args:
         comments: List of comment objects, each may have 'replies' with more comments
     
     Returns:
-        Flat list of all comment bodies
+        List of (body, score) tuples
     """
-    bodies = []
+    results = []
     
     for comment in comments:
-        # Get the body of this comment
+        # Get the body and score of this comment
         body = comment.get("body", "")
+        score = comment.get("score", 0)
+        
         if body and body not in ["[deleted]", "[removed]"]:
-            bodies.append(body)
+            results.append((body, score))
         
         # Recursively get replies
         replies = comment.get("replies", [])
         if replies:
-            bodies.extend(extract_comments_recursive(replies))
+            results.extend(extract_comments_recursive(replies))
     
-    return bodies
+    return results
 
 
 def extract_from_reddit_json(input_path: str, output_path: str = "temp.json") -> dict:
     """
     Extract title and all comments from a Reddit scraper JSON file.
+    Comments are sorted by score (upvotes) in descending order.
     
     Args:
         input_path: Path to the Reddit JSON file
@@ -69,18 +73,25 @@ def extract_from_reddit_json(input_path: str, output_path: str = "temp.json") ->
     title = posts[0].get("title", "")
     print(f"Title: {title}")
     
-    # Extract all comments recursively
-    all_comments = []
+    # Extract all comments recursively (with scores)
+    all_comments_with_scores = []
     for post in posts:
         comments = post.get("comments", [])
-        all_comments.extend(extract_comments_recursive(comments))
+        all_comments_with_scores.extend(extract_comments_recursive(comments))
     
-    print(f"Found {len(all_comments)} comments")
+    # Sort by score (descending order - highest first)
+    all_comments_with_scores.sort(key=lambda x: x[1], reverse=True)
+    
+    # Extract just the bodies (now sorted by score)
+    sorted_comments = [body for body, score in all_comments_with_scores]
+    
+    print(f"Found {len(sorted_comments)} comments")
+    print(f"Top comment score: {all_comments_with_scores[0][1] if all_comments_with_scores else 0}")
     
     # Build output
     result = {
         "title": title,
-        "comments": all_comments
+        "comments": sorted_comments
     }
     
     # Save to output file
