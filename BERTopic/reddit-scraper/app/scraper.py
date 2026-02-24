@@ -1,15 +1,17 @@
 """
-Reddit Scraper - Simple & Complete
------------------------------------
-Just give it a search URL and it scrapes EVERYTHING.
+Reddit Scraper - Google Search + Reddit Scraping
+-------------------------------------------------
+1. Search Google for the query
+2. Find the first reddit.com link
+3. Scrape that Reddit page (post + comments)
 
-URL: https://www.reddit.com/search.json?q=<your+query>
-
-That's it. No parameters, no filters. Just raw results.
+Alternative: Use Reddit's JSON API directly for search.
 """
 
 import time
 import logging
+import re
+import urllib.parse
 from typing import Optional, List
 
 import httpx
@@ -23,6 +25,12 @@ REDDIT_BASE = "https://www.reddit.com"
 _HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
     "Accept": "application/json",
+}
+
+_GOOGLE_HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.5",
 }
 
 
@@ -56,6 +64,152 @@ def get_json(url: str) -> dict:
             time.sleep(wait)
 
     raise RuntimeError(f"Failed after 10 retries: {url}")
+
+
+def get_html(url: str) -> str:
+    """Get HTML from URL with retries."""
+    for attempt in range(5):
+        try:
+            with httpx.Client(timeout=30, headers=_GOOGLE_HEADERS, follow_redirects=True) as client:
+                resp = client.get(url)
+
+            if resp.status_code == 429:
+                wait = 5 + attempt * 2
+                logger.warning("⚠️ Rate limited! Waiting %d seconds...", wait)
+                time.sleep(wait)
+                continue
+
+            if resp.status_code >= 500:
+                wait = 3 + attempt * 2
+                logger.warning("⚠️ Server error %d. Waiting %d seconds...", resp.status_code, wait)
+                time.sleep(wait)
+                continue
+
+            resp.raise_for_status()
+            return resp.text
+
+        except httpx.TimeoutException:
+            wait = 3 + attempt * 2
+            logger.warning("⚠️ Timeout. Waiting %d seconds...", wait)
+            time.sleep(wait)
+
+    raise RuntimeError(f"Failed to fetch HTML: {url}")
+
+
+def search_google_for_reddit(query: str) -> Optional[str]:
+    """
+    Search Google for the query and return the first reddit.com link found.
+    
+    Returns the Reddit URL or None if no Reddit link is found.
+    """
+    # Add "site:reddit.com" to the query to prioritize Reddit results
+    search_query = f"{query} site:reddit.com"
+    encoded_query = urllib.parse.quote(search_query)
+    google_url = f"https://www.google.com/search?q={encoded_query}&num=20"
+    
+    logger.info("🔍 Searching Google: %s", google_url)
+    
+    html = get_html(google_url)
+    
+    # Log a snippet for debugging
+    logger.debug("HTML snippet: %s", html[:2000])
+    
+    # Multiple patterns to find Reddit URLs in Google search results
+    found_reddit_urls = []
+    
+    # Pattern 1: /url?q=... format (most common)
+    url_pattern = r'/url\?q=([^&"\s]+)'
+    for match in re.finditer(url_pattern, html):
+        url = urllib.parse.unquote(match.group(1))
+        if 'reddit.com' in url:
+            # Clean up the URL
+            clean_url = url.split('&')[0]
+            if clean_url not in found_reddit_urls:
+                found_reddit_urls.append(clean_url)
+                logger.info("  Found via /url?q=: %s", clean_url)
+    
+    # Pattern 2: Direct href="https://www.reddit.com/..." links
+    href_pattern = r'href=["\']?(https?://(?:www\.)?reddit\.com/[^"\'\s>]+)["\']?'
+    for match in re.finditer(href_pattern, html):
+        url = match.group(1)
+        if url not in found_reddit_urls:
+            found_reddit_urls.append(url)
+            logger.info("  Found via href: %s", url)
+    
+    # Pattern 3: Any reddit.com URL anywhere in the HTML
+    general_pattern = r'https?://(?:www\.)?reddit\.com/[^\s"\'<>]+'
+    for match in re.finditer(general_pattern, html):
+        url = match.group(0)
+        # Clean trailing punctuation
+        url = url.rstrip('.,;:!?)')
+        if url not in found_reddit_urls:
+            found_reddit_urls.append(url)
+            logger.info("  Found via general pattern: %s", url)
+    
+    # Pattern 4: Look in data-href or other attributes
+    data_href_pattern = r'data-href=["\']?(https?://(?:www\.)?reddit\.com/[^"\'\s>]+)["\']?'
+    for match in re.finditer(data_href_pattern, html):
+        url = match.group(1)
+        if url not in found_reddit_urls:
+            found_reddit_urls.append(url)
+            logger.info("  Found via data-href: %s", url)
+    
+    # Return the first valid Reddit URL (skip Reddit homepage or generic links)
+    for url in found_reddit_urls:
+        # Skip if it's just the homepage or very short
+        if len(url) < 30:
+            continue
+        # Skip if it's just reddit.com or reddit.com/r/
+        if url in ['https://www.reddit.com', 'https://reddit.com', 
+                   'https://www.reddit.com/', 'https://reddit.com/']:
+            continue
+        # We want actual post/comment links
+        logger.info("✅ Selected Reddit URL: %s", url)
+        return url
+    
+    # If we found any Reddit URLs at all, return the first one
+    if found_reddit_urls:
+        logger.info("✅ Using first found Reddit URL: %s", found_reddit_urls[0])
+        return found_reddit_urls[0]
+    
+    logger.warning("❌ No Reddit URL found in Google search results")
+    return None
+
+
+def search_duckduckgo_for_reddit(query: str) -> Optional[str]:
+    """
+    Fallback: Search DuckDuckGo for Reddit links.
+    DuckDuckGo is often more scraper-friendly than Google.
+    """
+    search_query = f"{query} site:reddit.com"
+    encoded_query = urllib.parse.quote(search_query)
+    ddg_url = f"https://html.duckduckgo.com/html/?q={encoded_query}"
+    
+    logger.info("🔍 Searching DuckDuckGo: %s", ddg_url)
+    
+    try:
+        html = get_html(ddg_url)
+        
+        # DuckDuckGo HTML results have links in <a class="result__a" href="...">
+        # The actual URL is usually after u= in the href
+        patterns = [
+            r'uddg=([^&"\s]+)',  # DuckDuckGo redirect URL
+            r'href=["\']?(https?://(?:www\.)?reddit\.com/[^"\'\s>]+)["\']?',
+            r'https?://(?:www\.)?reddit\.com/[^\s"\'<>]+',
+        ]
+        
+        for pattern in patterns:
+            for match in re.finditer(pattern, html):
+                url = urllib.parse.unquote(match.group(1) if match.lastindex else match.group(0))
+                if 'reddit.com' in url and len(url) > 30:
+                    # Clean up
+                    url = url.split('&')[0].rstrip('.,;:!?)')
+                    logger.info("✅ Found Reddit URL via DuckDuckGo: %s", url)
+                    return url
+    except Exception as e:
+        logger.warning("DuckDuckGo search failed: %s", e)
+    
+    return None
 
 
 def parse_comment(data: dict, depth: int = 0) -> Optional[Comment]:
@@ -214,3 +368,103 @@ def scrape_search(query: str) -> List[Post]:
     logger.info("=" * 70)
     
     return all_posts
+
+
+def scrape_single_post(reddit_url: str) -> Optional[Post]:
+    """
+    Scrape a single Reddit post from its URL.
+    
+    Args:
+        reddit_url: Full Reddit URL (e.g., https://www.reddit.com/r/.../comments/.../...)
+    
+    Returns:
+        Post object with comments, or None if failed.
+    """
+    logger.info("=" * 70)
+    logger.info("🔍 SCRAPING SINGLE REDDIT POST")
+    logger.info("=" * 70)
+    logger.info("URL: %s", reddit_url)
+    
+    # Ensure we have the .json endpoint
+    json_url = reddit_url.rstrip('/')
+    if not json_url.endswith('.json'):
+        json_url = f"{json_url}.json"
+    
+    # Add parameters for more comments
+    if '?' in json_url:
+        json_url = f"{json_url}&limit=500&depth=20"
+    else:
+        json_url = f"{json_url}?limit=500&depth=20"
+    
+    try:
+        data = get_json(json_url)
+        
+        # Reddit post data comes as a list: [post_data, comments_data]
+        if not isinstance(data, list) or len(data) < 1:
+            logger.error("❌ Unexpected response format")
+            return None
+        
+        # Extract post data
+        post_listing = data[0].get("data", {})
+        post_children = post_listing.get("children", [])
+        
+        if not post_children:
+            logger.error("❌ No post found")
+            return None
+        
+        post = parse_post(post_children[0])
+        
+        # Get comments
+        logger.info("📝 Post: %s", post.title[:60] + "..." if len(post.title) > 60 else post.title)
+        post.comments = get_comments(reddit_url)
+        logger.info("💬 %d comments", len(post.comments))
+        
+        logger.info("")
+        logger.info("=" * 70)
+        logger.info("✅ SCRAPING COMPLETE!")
+        logger.info("   Comments: %d", len(post.comments))
+        logger.info("=" * 70)
+        
+        return post
+        
+    except Exception as e:
+        logger.error("❌ Failed to scrape post: %s", e)
+        return None
+
+
+def scrape_via_google(query: str) -> List[Post]:
+    """
+    Search Google for the query, find the first Reddit link, and scrape it.
+    
+    Falls back to DuckDuckGo if Google doesn't find anything.
+    
+    Args:
+        query: Search query (e.g., "best python tutorials")
+    
+    Returns:
+        List containing the scraped post (or empty list if failed).
+    """
+    logger.info("=" * 70)
+    logger.info("🔍 SEARCH ENGINE → REDDIT SCRAPER")
+    logger.info("=" * 70)
+    logger.info("Query: %s", query)
+    
+    # Step 1: Try Google first
+    reddit_url = search_google_for_reddit(query)
+    
+    # Step 2: If Google fails, try DuckDuckGo
+    if not reddit_url:
+        logger.info("⚠️ Google didn't find Reddit URL, trying DuckDuckGo...")
+        reddit_url = search_duckduckgo_for_reddit(query)
+    
+    if not reddit_url:
+        logger.warning("❌ No Reddit URL found for query: %s", query)
+        return []
+    
+    # Step 3: Scrape the Reddit post
+    post = scrape_single_post(reddit_url)
+    
+    if post:
+        return [post]
+    
+    return []
