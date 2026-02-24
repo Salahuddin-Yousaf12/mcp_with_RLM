@@ -1,0 +1,543 @@
+{
+  "query": "how far can I upgrade starscourge greatsword",
+  "source": "google",
+  "scraped_at": "2026-02-24T11:50:50.229509+00:00",
+  "count": 1,
+  "posts": [
+    {
+      "id": "t5j1wy",
+      "title": "Starscourge Greatsword scaling",
+      "url": "https://www.reddit.com/r/Eldenring/comments/t5j1wy/starscourge_greatsword_scaling/",
+      "permalink": "https://www.reddit.com/r/Eldenring/comments/t5j1wy/starscourge_greatsword_scaling/",
+      "score": 19,
+      "num_comments": 50,
+      "subreddit": "Eldenring",
+      "author": "MiyazakisBurner",
+      "created_utc": 1646281461.0,
+      "selftext": "When i go to level stats, int does not affect the weapons damage at all but dex will give a couple points if damage despite them both being a D for scaling. I think that int might only affect its L2 but ive not gotten around to testing that, it would be nice to know which stat boosted dps more.\n\nAlso, as a STR build does it make any sense to spec into int at all? im using an int talisman to get to 15 int for the swords and it would be nice to have that slot free.\n\nAlso also, it would be REALLY cool if the starscourge greatswords could act as a stave, having L2 into L1 use whatever spell is in the spell slot would be so sick, considering radahn does something similar himself",
+      "is_self": true,
+      "flair": "Discussion &amp; Info",
+      "comments": [
+        {
+          "id": "hziudlf",
+          "author": "slavicslothe",
+          "body": "Str is the only damage stat you want to put into that sword. It’s base damage is supa high either way.",
+          "score": 17,
+          "created_utc": 1646530567.0,
+          "parent_id": "t3_t5j1wy",
+          "is_submitter": false,
+          "replies": [
+            {
+              "id": "hzl22fk",
+              "author": "MiyazakisBurner",
+              "body": "im late game right now and have hit 66 str, dont need much more vigor. Is dex or int worth investing in at this point?",
+              "score": 3,
+              "created_utc": 1646580716.0,
+              "parent_id": "t1_hziudlf",
+              "is_submitter": true,
+              "replies": [
+                {
+                  "id": "i0006zw",
+                  "author": "JakeFromStateFromm",
+                  "body": "Probably not I would say. The level soft caps are much higher in this game that past games. Whereas in past Souls games strength and dex cap out at 40 or 50, making it so that splitting your damage between 2 stats was advantageous for min-maxing, apparently both strength and Dex scale well all the way until level 80 in this game. So you're probably better off taking strength all the way to 80 before you start dumping points into dex.",
+                  "score": 3,
+                  "created_utc": 1646848848.0,
+                  "parent_id": "t1_hzl22fk",
+                  "is_submitter": false,
+                  "replies": []
+                },
+                {
+                  "id": "hzqd6ac",
+                  "author": "Echo6Romeo",
+                  "body": "Yes. The weapon art depends on it.",
+                  "score": 1,
+                  "created_utc": 1646676844.0,
+                  "parent_id": "t1_hzl22fk",
+                  "is_submitter": false,
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hz6cc0h",
+          "author": "ThePeskyPole34",
+          "body": "I’m using it now and I have it plus 6 I think. I now have C in str, and D in both dex and int. I also bumped my int up to 18 so I can use gravity spells and the meteorite staff. Not sure what direction I’m gonna go from here but STR/Int seems pretty viable so far. My stats are like 40 STR, 25 Dex and 18 int and I’m hitting for about 600 AR at +6",
+          "score": 8,
+          "created_utc": 1646311258.0,
+          "parent_id": "t3_t5j1wy",
+          "is_submitter": false,
+          "replies": [
+            {
+              "id": "i1gqlay",
+              "author": "catchthisfade",
+              "body": "Why do I see the gravity staff/spells as a thing to commonly pair with the Starscourge Greatswords? I seem to be missing something.",
+              "score": 3,
+              "created_utc": 1647818286.0,
+              "parent_id": "t1_hz6cc0h",
+              "is_submitter": false,
+              "replies": [
+                {
+                  "id": "ik8bvz6",
+                  "author": "ghost-tripper",
+                  "body": "Grabity swords goes with gravity spells.",
+                  "score": 5,
+                  "created_utc": 1660465250.0,
+                  "parent_id": "t1_i1gqlay",
+                  "is_submitter": false,
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hzd94fq",
+          "author": "apexx47",
+          "body": "i didnt even think about that for the 2 handing… i feel stupid lol. guess im definitely going more strength now. thanks!",
+          "score": 7,
+          "created_utc": 1646428748.0,
+          "parent_id": "t3_t5j1wy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "hzqd17k",
+          "author": "Echo6Romeo",
+          "body": "Scaling is effect most depending on what point level you are at. You have to hit certain soft checkpoints to get increased value. That is what pumps up the percentage ranges",
+          "score": 6,
+          "created_utc": 1646676790.0,
+          "parent_id": "t3_t5j1wy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "i6r6tzr",
+          "author": "Zealousideal-Wheel26",
+          "body": "You have to level intelligence to boost the elemental magic damage. Im confused as to why people have forgotten this from previous souls games. Anytime you have a weapon with any kind of elemental damage....you need to level faith/int/arc to boost that specific damage. I saw major damage increase especially with the weapon art when I leveled intelligence....same thing with malekiths black blade with leveling faith.",
+          "score": 3,
+          "created_utc": 1651292608.0,
+          "parent_id": "t3_t5j1wy",
+          "is_submitter": false,
+          "replies": [
+            {
+              "id": "mkwy4sy",
+              "author": "1dont69_247",
+              "body": "So scaling intelligence will increase the magic damage I deal with the starscourge greatsword when I melee attack? I see a purple effect when I land a hit and there appears to be magic damage with melee attacks in the damage type list. Nobody seems to be utilising this to get past magic or physical resistant bosses, surely you want 50/50 on magic and physical?",
+              "score": 1,
+              "created_utc": 1743539322.0,
+              "parent_id": "t1_i6r6tzr",
+              "is_submitter": false,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "id": "hzd1jgr",
+          "author": "apexx47",
+          "body": "im in a similar situation. im primarily strength but my stats in relation to the sword are 39 strength/20 dex/ 27 int. sword is +9 at 697 dmg. putting points into strength/dex doesnt effect sword at all but int does. i guess it must rotate which scaling goes up?\nalso i would say as a strength build ive personally found it worth it to spec some into int so i can use sorceries when needed. it can drastically help against certain enemies that might be too fast to reliably get chains off with collosal weapons.",
+          "score": 2,
+          "created_utc": 1646425860.0,
+          "parent_id": "t3_t5j1wy",
+          "is_submitter": false,
+          "replies": [
+            {
+              "id": "hzd1ylq",
+              "author": "MiyazakisBurner",
+              "body": "im at 66 str, 12 dex and 15 int now, it seems like it didnt count my int talisman so i was technically underleveled. Now im wondering if i should go over 66 str because i cant two hand so no 50% bonus….",
+              "score": 3,
+              "created_utc": 1646426023.0,
+              "parent_id": "t1_hzd1jgr",
+              "is_submitter": true,
+              "replies": [
+                {
+                  "id": "hzd3mso",
+                  "author": "apexx47",
+                  "body": "why cant you two hand? also just curious whats your overall build stats looking like and the dmg for your sword? i might respec a few things like dex if it doesnt matter too much. my strength has been at this level for a long time i didnt know if it would be worth it to keep going",
+                  "score": 2,
+                  "created_utc": 1646426662.0,
+                  "parent_id": "t1_hzd1ylq",
+                  "is_submitter": false,
+                  "replies": [
+                    {
+                      "id": "hzd4yhy",
+                      "author": "MiyazakisBurner",
+                      "body": "you cant two hand because its two swords, so one arm per sword. My AOE pull damage is 500 and then ~2100 for the L2 L2. A jump atk is about 1500 and an r1 does 1200.",
+                      "score": 1,
+                      "created_utc": 1646427163.0,
+                      "parent_id": "t1_hzd3mso",
+                      "is_submitter": true,
+                      "replies": [
+                        {
+                          "id": "hzeb463",
+                          "author": "ilovecatsandturtles",
+                          "body": "Really? The 2h 1.5 str bonus doesnt apply?  Thats really lame if so.",
+                          "score": 1,
+                          "created_utc": 1646444650.0,
+                          "parent_id": "t1_hzd4yhy",
+                          "is_submitter": false,
+                          "replies": [
+                            {
+                              "id": "hzebfev",
+                              "author": "MiyazakisBurner",
+                              "body": "it doesnt really matter because its two swords, so damage output is higher with the two than just one sword being 2handed",
+                              "score": 1,
+                              "created_utc": 1646444789.0,
+                              "parent_id": "t1_hzeb463",
+                              "is_submitter": true,
+                              "replies": [
+                                {
+                                  "id": "hzef79a",
+                                  "author": "Doctorpercocet",
+                                  "body": "So if I’m a strength/faith and I want a good weapon should I get this?",
+                                  "score": 1,
+                                  "created_utc": 1646446496.0,
+                                  "parent_id": "t1_hzebfev",
+                                  "is_submitter": false,
+                                  "replies": [
+                                    {
+                                      "id": "hzqddf4",
+                                      "author": "Echo6Romeo",
+                                      "body": "Golden halberd for you",
+                                      "score": 2,
+                                      "created_utc": 1646676919.0,
+                                      "parent_id": "t1_hzef79a",
+                                      "is_submitter": false,
+                                      "replies": []
+                                    },
+                                    {
+                                      "id": "hzefag4",
+                                      "author": "MiyazakisBurner",
+                                      "body": "no, this is strength / intelligence",
+                                      "score": 1,
+                                      "created_utc": 1646446536.0,
+                                      "parent_id": "t1_hzef79a",
+                                      "is_submitter": true,
+                                      "replies": [
+                                        {
+                                          "id": "hzefdpl",
+                                          "author": "Doctorpercocet",
+                                          "body": "But if I don’t use the intelligence aspect of it is it still a good strength weapon?",
+                                          "score": 1,
+                                          "created_utc": 1646446577.0,
+                                          "parent_id": "t1_hzefag4",
+                                          "is_submitter": false,
+                                          "replies": [
+                                            {
+                                              "id": "hzemvy4",
+                                              "author": "MiyazakisBurner",
+                                              "body": "yes",
+                                              "score": 2,
+                                              "created_utc": 1646450029.0,
+                                              "parent_id": "t1_hzefdpl",
+                                              "is_submitter": true,
+                                              "replies": []
+                                            },
+                                            {
+                                              "id": "i000mjp",
+                                              "author": "JakeFromStateFromm",
+                                              "body": "Yes, the int scaling is negligable on this weapon. I believe it does require like 15 int to wield tho in addition to 38 strength iirc and some level of Dex, like 17 or something like that",
+                                              "score": 1,
+                                              "created_utc": 1646849011.0,
+                                              "parent_id": "t1_hzefdpl",
+                                              "is_submitter": false,
+                                              "replies": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "id": "hzv7obv",
+                              "author": "ZealousidealFinger67",
+                              "body": "but any attack deals 2x damage, it is in fact much more stronger ( given you can 100% hit the target with all the hits ), but i am not sure if it is count as successive attack",
+                              "score": 1,
+                              "created_utc": 1646763118.0,
+                              "parent_id": "t1_hzeb463",
+                              "is_submitter": false,
+                              "replies": [
+                                {
+                                  "id": "hzvaoig",
+                                  "author": "ilovecatsandturtles",
+                                  "body": "True. Update, ive since beat tje game with starscourge and they are great.  Powerstance col swords for 20 weight and look badass sign me up.",
+                                  "score": 1,
+                                  "created_utc": 1646764218.0,
+                                  "parent_id": "t1_hzv7obv",
+                                  "is_submitter": false,
+                                  "replies": []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "id": "i3jn2eg",
+                          "author": "Snoo49148",
+                          "body": "wait so you don't get the 1.5x strength if you two hand it?",
+                          "score": 1,
+                          "created_utc": 1649194724.0,
+                          "parent_id": "t1_hzd4yhy",
+                          "is_submitter": false,
+                          "replies": [
+                            {
+                              "id": "i3l28js",
+                              "author": "MiyazakisBurner",
+                              "body": "no, its not two handing its just powerstancing because they are pired swords, in most cases it does more damage than if it gave the 50% boost.",
+                              "score": 1,
+                              "created_utc": 1649217984.0,
+                              "parent_id": "t1_i3jn2eg",
+                              "is_submitter": true,
+                              "replies": [
+                                {
+                                  "id": "i3l9832",
+                                  "author": "Snoo49148",
+                                  "body": "should i just level it up to 99 or keep it at 66?",
+                                  "score": 1,
+                                  "created_utc": 1649222152.0,
+                                  "parent_id": "t1_i3l28js",
+                                  "is_submitter": false,
+                                  "replies": [
+                                    {
+                                      "id": "i3mfexe",
+                                      "author": "MiyazakisBurner",
+                                      "body": "80 is the new softcap",
+                                      "score": 1,
+                                      "created_utc": 1649251431.0,
+                                      "parent_id": "t1_i3l9832",
+                                      "is_submitter": true,
+                                      "replies": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "hzh0gz3",
+                  "author": "[deleted]",
+                  "body": "How do you get so much strength? I’m level 40 and have 31 strength and rest into endurance and vigor. It takes ages for me to level up because enemies gives 1000 souls at best.",
+                  "score": 1,
+                  "created_utc": 1646500848.0,
+                  "parent_id": "t1_hzd1ylq",
+                  "is_submitter": false,
+                  "replies": [
+                    {
+                      "id": "hzqg78r",
+                      "author": "bonesofberdichev",
+                      "body": "Once you get this sword there's a ridiculous Rune grind.  Like 40k runes every 15 seconds.  I went from level 80 to over 140 in a couple hours.",
+                      "score": 3,
+                      "created_utc": 1646677994.0,
+                      "parent_id": "t1_hzh0gz3",
+                      "is_submitter": false,
+                      "replies": [
+                        {
+                          "id": "hzyk772",
+                          "author": "[deleted]",
+                          "body": "I gotta get this sword then:)",
+                          "score": 1,
+                          "created_utc": 1646824691.0,
+                          "parent_id": "t1_hzqg78r",
+                          "is_submitter": false,
+                          "replies": []
+                        },
+                        {
+                          "id": "i36fbou",
+                          "author": "Rulanik",
+                          "body": "Where do you grind your runes?",
+                          "score": 1,
+                          "created_utc": 1648954327.0,
+                          "parent_id": "t1_hzqg78r",
+                          "is_submitter": false,
+                          "replies": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "hzv7t8t",
+                      "author": "ZealousidealFinger67",
+                      "body": "but if you are level 40 and can lay hands on starscourge.. thou art strong",
+                      "score": 2,
+                      "created_utc": 1646763171.0,
+                      "parent_id": "t1_hzh0gz3",
+                      "is_submitter": false,
+                      "replies": [
+                        {
+                          "id": "hzyk9i8",
+                          "author": "[deleted]",
+                          "body": "I need to get that sword. I might need help to summon others to kill Radahn.",
+                          "score": 1,
+                          "created_utc": 1646824739.0,
+                          "parent_id": "t1_hzv7t8t",
+                          "is_submitter": false,
+                          "replies": []
+                        },
+                        {
+                          "id": "hzyrlle",
+                          "author": "[deleted]",
+                          "body": "What’s the recommended level for Starscourge Radahn?",
+                          "score": 1,
+                          "created_utc": 1646829691.0,
+                          "parent_id": "t1_hzv7t8t",
+                          "is_submitter": false,
+                          "replies": [
+                            {
+                              "id": "hzyrxi9",
+                              "author": "ZealousidealFinger67",
+                              "body": "if you are thinking of going in and fighting melee, you will need a bleed build best, imho higher level just give you the option to finish the boss faster, and a higher hp to not get one shot, thus taking less risk. but with those cheese tactics, i if you are having perfect rolls, you are fine at any level. (i did him at 60 anyway, with golden halberd, no horse once close to him )",
+                              "score": 2,
+                              "created_utc": 1646829888.0,
+                              "parent_id": "t1_hzyrlle",
+                              "is_submitter": false,
+                              "replies": []
+                            },
+                            {
+                              "id": "i000t34",
+                              "author": "JakeFromStateFromm",
+                              "body": "Around 60-70 I would say",
+                              "score": 2,
+                              "created_utc": 1646849081.0,
+                              "parent_id": "t1_hzyrlle",
+                              "is_submitter": false,
+                              "replies": [
+                                {
+                                  "id": "i0039qw",
+                                  "author": "[deleted]",
+                                  "body": "Thanks. I better go farm some more souls then:)",
+                                  "score": 1,
+                                  "created_utc": 1646850165.0,
+                                  "parent_id": "t1_i000t34",
+                                  "is_submitter": false,
+                                  "replies": [
+                                    {
+                                      "id": "i006idx",
+                                      "author": "JakeFromStateFromm",
+                                      "body": "NP!",
+                                      "score": 1,
+                                      "created_utc": 1646851481.0,
+                                      "parent_id": "t1_i0039qw",
+                                      "is_submitter": false,
+                                      "replies": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "hzhpkmv",
+                      "author": "MiyazakisBurner",
+                      "body": "i am level 106 as of right now, runes in the mid games are hard to come by. I just popped a golden rune that gave me 50k and the boss im on drops 420k",
+                      "score": 1,
+                      "created_utc": 1646511702.0,
+                      "parent_id": "t1_hzh0gz3",
+                      "is_submitter": true,
+                      "replies": [
+                        {
+                          "id": "hzqgf1i",
+                          "author": "bonesofberdichev",
+                          "body": "So with Starscourge you can get 40k runes every 15 seconds doing the monkey grind.  Just make sure you have the two Physick flask items that increase charged damage and allow you to cast without FP.  It's ridiculous how fast you can level with Starscourge.",
+                          "score": 2,
+                          "created_utc": 1646678077.0,
+                          "parent_id": "t1_hzhpkmv",
+                          "is_submitter": false,
+                          "replies": [
+                            {
+                              "id": "hztmzwp",
+                              "author": "emilsol",
+                              "body": "What grind is this? Could u link me a video or smt?",
+                              "score": 1,
+                              "created_utc": 1646736459.0,
+                              "parent_id": "t1_hzqgf1i",
+                              "is_submitter": false,
+                              "replies": [
+                                {
+                                  "id": "hztrb06",
+                                  "author": "bonesofberdichev",
+                                  "body": "https://reddit.com/r/Eldenring/comments/t6sex9/monke_easy_40k_rune_farm_per_run_at_mohgwyn/",
+                                  "score": 2,
+                                  "created_utc": 1646739755.0,
+                                  "parent_id": "t1_hztmzwp",
+                                  "is_submitter": false,
+                                  "replies": [
+                                    {
+                                      "id": "hztt3g5",
+                                      "author": "emilsol",
+                                      "body": "Ty goat",
+                                      "score": 1,
+                                      "created_utc": 1646740987.0,
+                                      "parent_id": "t1_hztrb06",
+                                      "is_submitter": false,
+                                      "replies": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "id": "hzi5vn4",
+                          "author": "[deleted]",
+                          "body": "Omg",
+                          "score": 1,
+                          "created_utc": 1646518999.0,
+                          "parent_id": "t1_hzhpkmv",
+                          "is_submitter": false,
+                          "replies": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "hzhe7ni",
+                      "author": "BeanpoleAhead",
+                      "body": "Well they're surely over level 40, that's pretty low. The game is pretty stingy with runes but you'll get there eventually.",
+                      "score": 1,
+                      "created_utc": 1646506690.0,
+                      "parent_id": "t1_hzh0gz3",
+                      "is_submitter": false,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ijf8510",
+          "author": "wrathofattila",
+          "body": "Does dex increase the sword spell speed the pull boom boom one? Im 70vig 80 str 15 dex",
+          "score": 1,
+          "created_utc": 1659952703.0,
+          "parent_id": "t3_t5j1wy",
+          "is_submitter": false,
+          "replies": [
+            {
+              "id": "jwxr6do",
+              "author": "nightcore96",
+              "body": "Ik this is late but no, no stat increases speed of abilities, str and dex and the same different types of weapons use them 4 scaling tho",
+              "score": 1,
+              "created_utc": 1692492904.0,
+              "parent_id": "t1_ijf8510",
+              "is_submitter": false,
+              "replies": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

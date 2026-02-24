@@ -1,8 +1,31 @@
-# Project: API Dispatcher
+# Project: Reddit Scraper MCP Server
 
-A natural-language-to-API-call adapter. The user types a plain English query,
-an Ollama LLM figures out which API function to call and with what arguments,
-and the system fires the corresponding HTTP request.
+A natural-language-to-Reddit-scraper adapter. The user types a plain English query,
+an Ollama LLM figures out which API function to call, and the system:
+1. Searches Google/Reddit for the topic
+2. Scrapes the Reddit post + comments
+3. Extracts title + comments to `temp.json`
+
+## Project Structure
+
+```
+BERTopic/
+├── mcp-server/           # MCP Server (API Dispatcher)
+│   ├── main.py           # REPL loop — ties everything together
+│   ├── function_registry.py  # Reddit scraper API endpoints
+│   ├── ollama_client.py  # HTTP client for the Ollama model endpoint
+│   ├── parser.py         # Parses raw LLM output into a structured ParsedCall
+│   ├── executor.py       # Calls Reddit API + extracts comments
+│   └── requirements.txt  # Python dependencies
+├── reddit-scraper/       # Reddit Scraper FastAPI Service
+│   ├── app/main.py       # FastAPI endpoints (/search, /google)
+│   ├── app/scraper.py    # Reddit scraping logic
+│   └── app/models.py     # Pydantic models
+├── reddit-viewer/        # Frontend for viewing scraped posts
+├── extract_comments.py   # Extracts title + comments from JSON
+├── temp.json             # Output file with extracted comments
+└── CLAUDE.md             # This file
+```
 
 ## Flow
 
@@ -11,78 +34,85 @@ User query (natural language)
         │
         ▼
 ollama_client.py   →  sends query + function registry to Ollama LLM
-        │              gets back raw text like: insert_student_marks("ahmed", 20)
+        │              gets back: google_search_reddit("elden ring weapons")
         ▼
-parser.py          →  extracts function name + args from the raw LLM response
+parser.py          →  extracts function name + args
         │              produces a ParsedCall object
         ▼
-executor.py        →  looks up the FunctionSpec in the registry
-        │              builds the HTTP request (path/query/body/header params)
-        │              fires it with httpx
+executor.py        →  calls Reddit scraper API
+        │              waits for scrape to complete
+        │              runs extract_comments.py
         ▼
-result printed in REPL (main.py)
+temp.json          →  { "title": "...", "comments": [...] }
 ```
 
-## File Map
+## Running the System
 
-| File                    | Responsibility                                              |
-|-------------------------|-------------------------------------------------------------|
-| `main.py`               | REPL loop — ties everything together                        |
-| `function_registry.py`  | All API endpoints defined as FunctionSpec entries           |
-| `ollama_client.py`      | HTTP client for the Ollama model endpoint                   |
-| `parser.py`             | Parses raw LLM output into a structured ParsedCall          |
-| `executor.py`           | Binds args and fires the actual HTTP API call               |
-
-## Adding a New API Endpoint
-
-Only `function_registry.py` needs to change. Add a `FunctionSpec` to `REGISTRY`:
-
-```python
-FunctionSpec(
-    name="your_function_name",        # what the LLM will call
-    description="What it does.",      # shown to the LLM in the prompt
-    method="POST",
-    url="https://your-api.com/resource/{path_param}",
-    params=[
-        ParamSpec("path_param", "str", "description", location="path"),
-        ParamSpec("body_field", "int", "description", location="body"),
-    ],
-)
-```
-
-### Param locations
-
-| Location | Where it goes in the request         |
-|----------|--------------------------------------|
-| `path`   | Substituted into the URL `{param}`   |
-| `query`  | Appended as `?key=value`             |
-| `body`   | Sent as JSON body `{"key": value}`   |
-| `header` | Sent as an HTTP header               |
-
-## Configuration
-
-| Variable        | File               | Default                                        |
-|-----------------|--------------------|------------------------------------------------|
-| `OLLAMA_BASE_URL` | `ollama_client.py` | `https://ollama-ijcare-gpt.sheikhibrar.com`  |
-| `OLLAMA_MODEL`    | `ollama_client.py` | `llama3.2`                                   |
-
-## Dependencies
-
-```
-httpx>=0.27.0
-```
-
-Install: `pip install -r requirements.txt`
-
-## Running
-
+### 1. Start the Reddit Scraper API
 ```bash
+cd reddit-scraper
+docker-compose up
+# OR for local dev:
+pip install -r requirements.txt
+uvicorn app.main:app --reload --port 8000
+```
+
+### 2. Start the MCP Server
+```bash
+cd mcp-server
+pip install -r requirements.txt
 python main.py
 ```
 
-## Key Design Decisions
+### 3. Use it!
+```
+============================================================
+Reddit Scraper MCP Server
+============================================================
+Ask me to search Reddit for any topic!
+Examples:
+  - 'search reddit for elden ring weapons'
+  - 'find reddit posts about python tutorials'
+  - 'google search reddit for best coffee makers'
 
-- **LLM is only a dispatcher** — it only decides *which function* to call and *what args* to pass. All actual logic lives in the registry + executor.
-- **ast.literal_eval for parsing** — safe, no `eval()`. Only parses Python literals (strings, ints, floats, bools, lists, dicts).
-- **Registry is the single source of truth** — the LLM prompt is auto-generated from it, so the LLM always knows exactly what's available.
-- **Platform-independent** — HTTP calls via httpx work identically on Windows and Linux.
+Type 'exit' to quit
+============================================================
+
+>>> search reddit for vyke's war spear
+  [ollama] sending query...
+  [ollama] raw response: 'google_search_reddit("vyke's war spear")'
+  [parser] → google_search_reddit(args=["vyke's war spear"], kwargs={})
+  [executor] calling API...
+  [result] ✅ Success!
+           Posts found: 1
+           Saved to: /data/reddit_google_vyke_s_war_spear.json
+           Comments extracted to: temp.json
+```
+
+## Available Functions
+
+| Function | Description |
+|----------|-------------|
+| `search_reddit(q)` | Search Reddit directly for posts |
+| `google_search_reddit(q)` | Search Google for Reddit posts, scrape top result |
+
+## Configuration
+
+| Variable | File | Default |
+|----------|------|---------|
+| `OLLAMA_BASE_URL` | `ollama_client.py` | `https://ollama-ijcare-gpt.sheikhibrar.com` |
+| `OLLAMA_MODEL` | `ollama_client.py` | `llama3.2` |
+| `REDDIT_SCRAPER_URL` | `function_registry.py` | `http://localhost:8000` |
+
+## Output Format (temp.json)
+
+```json
+{
+  "title": "Post title here",
+  "comments": [
+    "First comment body...",
+    "Second comment body...",
+    "..."
+  ]
+}
+```

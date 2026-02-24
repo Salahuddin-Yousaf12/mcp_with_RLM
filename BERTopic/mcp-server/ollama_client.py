@@ -8,7 +8,7 @@ import httpx
 from function_registry import describe_registry
 
 OLLAMA_BASE_URL = "https://ollama-ijcare-gpt.sheikhibrar.com"
-OLLAMA_MODEL    = "llama3.2"   # change to whatever model is actually deployed
+OLLAMA_MODEL    = "gpt-oss:20b"   # Model deployed on your server
 
 SYSTEM_PROMPT = """\
 You are a function dispatcher. Given a user query, you must respond with ONLY \
@@ -35,16 +35,19 @@ def call_ollama(user_query: str) -> str:
     """Send user_query to Ollama, return the raw model response string."""
     prompt = build_prompt(user_query)
 
-    with httpx.Client(timeout=30) as client:
+    payload = {
+        "model": OLLAMA_MODEL,
+        "prompt": prompt,
+        "stream": False,
+        "temperature": 0.1,
+    }
+
+    with httpx.Client(timeout=60) as client:
         response = client.post(
             f"{OLLAMA_BASE_URL}/api/generate",
-            json={
-                "model": OLLAMA_MODEL,
-                "prompt": prompt,
-                "stream": False,
-            },
+            json=payload,
         )
         response.raise_for_status()
         data = response.json()
 
-    return data["response"].strip()
+    return data.get("response", "").strip()

@@ -17,7 +17,18 @@ from executor import execute, UnknownFunctionError
 
 
 def repl():
-    print("Function Dispatcher REPL  (type 'exit' to quit)\n")
+    print("=" * 60)
+    print("Reddit Scraper MCP Server")
+    print("=" * 60)
+    print("Ask me to search Reddit for any topic!")
+    print("Examples:")
+    print("  - 'search reddit for elden ring weapons'")
+    print("  - 'find reddit posts about python tutorials'")
+    print("  - 'google search reddit for best coffee makers'")
+    print("")
+    print("Type 'exit' to quit")
+    print("=" * 60)
+    print("")
 
     while True:
         try:
@@ -53,8 +64,28 @@ def repl():
 
         # ── Step 3: Execute ──────────────────────────────────────────────────
         try:
+            print("  [executor] calling API...")
             result = execute(parsed)
-            print(f"  [result] {result}\n")
+            
+            # Pretty print the result
+            status = result.get("status_code", "unknown")
+            body = result.get("body", {})
+            
+            if status == 200:
+                print(f"  [result] ✅ Success!")
+                
+                # Show Reddit-specific info
+                if "count" in body:
+                    print(f"           Posts found: {body['count']}")
+                if "saved_to" in body:
+                    print(f"           Saved to: {body['saved_to']}")
+                if "extracted_to" in result:
+                    print(f"           Comments extracted to: {result['extracted_to']}")
+            else:
+                print(f"  [result] ❌ Status: {status}")
+                print(f"           {body}")
+            print("")
+            
         except UnknownFunctionError as e:
             print(f"  [error] {e}\n")
         except Exception as e:

@@ -42,29 +42,36 @@ class FunctionSpec:
 
 
 # ---------------------------------------------------------------------------
+# Configuration
+# ---------------------------------------------------------------------------
+
+# Reddit Scraper API URL (change this to your deployed URL)
+REDDIT_SCRAPER_URL = "http://localhost:8001"
+
+
+# ---------------------------------------------------------------------------
 # Registry  — add your API-backed functions here
 # ---------------------------------------------------------------------------
 
 REGISTRY: list[FunctionSpec] = [
 
     FunctionSpec(
-        name="insert_student_marks",
-        description="Insert exam marks for a student.",
-        method="POST",
-        url="https://your-api.com/students/{student_name}/marks",
+        name="search_reddit",
+        description="Search Reddit directly for posts about a topic. Returns posts and comments from Reddit's search API.",
+        method="GET",
+        url=f"{REDDIT_SCRAPER_URL}/search",
         params=[
-            ParamSpec("student_name", "str", "Name of the student",  location="path"),
-            ParamSpec("marks",        "int", "Mark value to insert", location="body"),
+            ParamSpec("q", "str", "Search query (e.g., 'elden ring weapons', 'python tutorials')", location="query"),
         ],
     ),
 
     FunctionSpec(
-        name="get_student_marks",
-        description="Get exam marks for a student.",
+        name="google_search_reddit",
+        description="Search Google for a Reddit post about a topic, then scrape the top result. Best for finding the most relevant Reddit discussion.",
         method="GET",
-        url="https://your-api.com/students/{student_name}/marks",
+        url=f"{REDDIT_SCRAPER_URL}/google",
         params=[
-            ParamSpec("student_name", "str", "Name of the student", location="path"),
+            ParamSpec("q", "str", "Search query (e.g., 'best python tutorials', 'elden ring boss tips')", location="query"),
         ],
     ),
 

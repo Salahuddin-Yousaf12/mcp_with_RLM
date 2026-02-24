@@ -1,0 +1,34 @@
+{
+  "query": "what attribute to increase for starscourge greatsword",
+  "source": "google",
+  "scraped_at": "2026-02-24T12:02:53.159236+00:00",
+  "count": 1,
+  "posts": [
+    {
+      "id": "1cws1n0",
+      "title": "Help with attributes for Starscourge greatsword",
+      "url": "https://www.reddit.com/r/Eldenring/comments/1cws1n0/help_with_attributes_for_starscourge_greatsword/",
+      "permalink": "https://www.reddit.com/r/Eldenring/comments/1cws1n0/help_with_attributes_for_starscourge_greatsword/",
+      "score": 1,
+      "num_comments": 1,
+      "subreddit": "Eldenring",
+      "author": "mizxl",
+      "created_utc": 1716243244.0,
+      "selftext": "Right now I have maxed out starscourge greatsword but I wondered what’s the best attributes to main it. Right now I’ve got about 41 strength 42 vigor 15 intelligence and dexterity and about 28 endurance. Is that okay?",
+      "is_self": true,
+      "flair": "Game Help",
+      "comments": [
+        {
+          "id": "l4xw2cu",
+          "author": "Rrambu",
+          "body": "Do note that unlike most other weapons, two-handing Starscourge is considered dual-wielding so the usual 1.5x multiplier doesn't apply. \n\nSo with that in mind, Starscourge is STR and the highest soft cap is 80 so you wanna aim for that. If you're not using anything else, you can safely keep DEX&amp;INT at minimum requirements. \n\nVIG between 40-60, depends on your comfort zone. If you're confident about not getting hit and isn't playing PvP, you can go even lower.\n\nEndurance about 20-25 would be enough, but you can go even higher if you wanna wear heavier armors. There are talismans to boosts equip load like the Arsenal Charms and Erdtree Favor.",
+          "score": 1,
+          "created_utc": 1716244434.0,
+          "parent_id": "t3_1cws1n0",
+          "is_submitter": false,
+          "replies": []
+        }
+      ]
+    }
+  ]
+}
