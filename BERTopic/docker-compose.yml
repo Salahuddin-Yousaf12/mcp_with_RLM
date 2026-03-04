@@ -1,0 +1,90 @@
+# All three services talk to each other over the internal 'mcp-net' network.
+# reddit-scraper and mcp-service share the 'scraper-data' volume so mcp-service
+# can read the JSON files that reddit-scraper writes.
+#
+# Ports exposed to the host:
+#   8001 — reddit-scraper
+#   8002 — rlm-service
+#   8003 — mcp-service  ← the one mcp_server.py and main.py talk to
+
+services:
+
+  # ── 1. Reddit Scraper ──────────────────────────────────────────────────────
+  reddit-scraper:
+    build: ./reddit-scraper
+    container_name: reddit-scraper
+    ports:
+      - "8001:8000"
+    volumes:
+      - scraper-data:/data
+    environment:
+      - LOG_LEVEL=info
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    networks:
+      - mcp-net
+
+  # ── 2. RLM Service ─────────────────────────────────────────────────────────
+  rlm-service:
+    build:
+      context: ../RLM        # one level up from BERTopic/
+      dockerfile: Dockerfile
+    container_name: rlm-service
+    ports:
+      - "8002:8002"
+    environment:
+      # Provider: 'tools' uses Ollama-native tool calling; 'repl' uses vLLM code execution
+      - RLM_MODE=tools
+      - ROOT_PROVIDER=ollama
+      - ROOT_BASE_URL=https://ollama-ijcare-gpt.sheikhibrar.com
+      - ROOT_MODEL=llama3.1:8b
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8002/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
+    networks:
+      - mcp-net
+
+  # ── 3. MCP Orchestrator Service ────────────────────────────────────────────
+  mcp-service:
+    build: ./mcp-server
+    container_name: mcp-service
+    ports:
+      - "8003:8003"
+    volumes:
+      - scraper-data:/data   # same volume as reddit-scraper to read scraped files
+    environment:
+      - REDDIT_SCRAPER_URL=http://reddit-scraper:8000
+      - RLM_SERVICE_URL=http://rlm-service:8002
+    depends_on:
+      reddit-scraper:
+        condition: service_healthy
+      rlm-service:
+        condition: service_healthy
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8003/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
+    networks:
+      - mcp-net
+
+networks:
+  mcp-net:
+    driver: bridge
+
+volumes:
+  scraper-data:

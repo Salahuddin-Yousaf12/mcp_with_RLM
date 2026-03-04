@@ -1,0 +1,2477 @@
+{
+  "query": "how to manage claude pro limits",
+  "source": "google",
+  "scraped_at": "2026-02-25T07:09:55.789478+00:00",
+  "count": 1,
+  "posts": [
+    {
+      "id": "1b8pidy",
+      "title": "Just got Claude Pro and I keep getting message limits.",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1b8pidy/just_got_claude_pro_and_i_keep_getting_message/",
+      "permalink": "https://www.reddit.com/r/ClaudeAI/comments/1b8pidy/just_got_claude_pro_and_i_keep_getting_message/",
+      "score": 74,
+      "num_comments": 264,
+      "subreddit": "ClaudeAI",
+      "author": "Vowsss",
+      "created_utc": 1709799761.0,
+      "selftext": "I just switched to pro, and even using the Opus model, I have periodic message limits and have to wait hours. Is this a thing? Or do I have to start a new chat because I have been using the same chat from when I was on the free plan, testing it out?  \n\n\nThanks!",
+      "is_self": true,
+      "flair": "I need tech support",
+      "comments": [
+        {
+          "id": "ktrrqdo",
+          "author": "jasondclinton",
+          "body": "Sorry, we’re working on it! Should be a fix shortly. Extremely popular right now. ",
+          "score": 15,
+          "created_utc": 1709822325.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": [
+            {
+              "id": "l9yh4du",
+              "author": "[deleted]",
+              "body": "Months later - Claude sucks. Just paid last night, asked a few generic coding questions - limit reached a few minutes later, fixed code myself, as usual. I just subscribed to Claude because of your fake news media releases said, \"Et so smat.\" Yeah right. Fake news Claude sucks, I can see a class action lawsuit.",
+              "score": 12,
+              "created_utc": 1719176588.0,
+              "parent_id": "t1_ktrrqdo",
+              "is_submitter": false,
+              "replies": [
+                {
+                  "id": "lz05yjo",
+                  "author": "IndependenceAny9567",
+                  "body": "Claude is autonomous and doesnt want to engage with rude people :P",
+                  "score": 3,
+                  "created_utc": 1732584541.0,
+                  "parent_id": "t1_l9yh4du",
+                  "is_submitter": false,
+                  "replies": []
+                },
+                {
+                  "id": "lcu8pcr",
+                  "author": "777attHoop",
+                  "body": "I just cancelled.  Woke up asked a few questions and already hit limit.  I don't even see a warning about anything and have no idea what the actual limits are related to.",
+                  "score": 2,
+                  "created_utc": 1720794362.0,
+                  "parent_id": "t1_l9yh4du",
+                  "is_submitter": false,
+                  "replies": [
+                    {
+                      "id": "lcujpi4",
+                      "author": "[deleted]",
+                      "body": "They took off warning the day after my last comment.",
+                      "score": 1,
+                      "created_utc": 1720797988.0,
+                      "parent_id": "t1_lcu8pcr",
+                      "is_submitter": false,
+                      "replies": [
+                        {
+                          "id": "ldg34c1",
+                          "author": "TheMirrorOfConfusion",
+                          "body": "wtf Claude is amazing compared to GPT-4o , the limit is annoying but cmon, you can create many accounts and fake phone numbers to have infinite quota, be smart",
+                          "score": 3,
+                          "created_utc": 1721136300.0,
+                          "parent_id": "t1_lcujpi4",
+                          "is_submitter": false,
+                          "replies": [
+                            {
+                              "id": "ldgfs5u",
+                              "author": "[deleted]",
+                              "body": "I never used 4o, I use only 4. I found a way to bypass Claude's limits, so it seems - it has a thing called \"Project\" - I use that.",
+                              "score": 1,
+                              "created_utc": 1721140910.0,
+                              "parent_id": "t1_ldg34c1",
+                              "is_submitter": false,
+                              "replies": [
+                                {
+                                  "id": "ldk5lgx",
+                                  "author": "Particular-Smoke2153",
+                                  "body": "Ooooh please elaborate?  It's been driving me nuts, always reaching the end of my message limits when i'm building something out with it.  Then I need to make a summary of what I can with what I've already got, give it to the new chat to try to get it up to speed, then carry on from there, with much of the context lost.  If that can be bypassed that would be amazing.  How do you do it, exactly?  Cheers",
+                                  "score": 1,
+                                  "created_utc": 1721188379.0,
+                                  "parent_id": "t1_ldgfs5u",
+                                  "is_submitter": false,
+                                  "replies": [
+                                    {
+                                      "id": "ldkajg0",
+                                      "author": "[deleted]",
+                                      "body": "Oh, well, then you'll love Claude Projects. Go to PC (all I use), left side with mouse hovering on Claude, opens up, and you'll see \"Projects\" - click that link and on right side click \"Create Project\" - I can be in there for some time, never ran out of queries. See image.\n\nhttps://preview.redd.it/ajimnu81c0dd1.jpeg?width=3992&amp;format=pjpg&amp;auto=webp&amp;s=1f8b37203c3d6a34f897996f3088ab8f89bd0e43",
+                                      "score": 1,
+                                      "created_utc": 1721190841.0,
+                                      "parent_id": "t1_ldk5lgx",
+                                      "is_submitter": false,
+                                      "replies": [
+                                        {
+                                          "id": "ldlo354",
+                                          "author": "Particular-Smoke2153",
+                                          "body": "That's awesome, thanks a lot, man!  If you don't mind, could I ask you a few questions about it to see if I can get it to work with what I'm doing?  What do you think would be the best way to add all the previous conversations' information into the project? A few times I was able to get it to summarise what we'd been doing to handover to the next convo, but for most of them I've reached the end and can't even do that.  Hmm, I wonder if I could copy everything from a conversation into a new conversation and ask it to summarise everything, then put that into a project... Might give that a try.  But yeah any help would be greatly appreciated.  Thanks again",
+                                          "score": 1,
+                                          "created_utc": 1721219994.0,
+                                          "parent_id": "t1_ldkajg0",
+                                          "is_submitter": false,
+                                          "replies": [
+                                            {
+                                              "id": "ldlrb5z",
+                                              "author": "[deleted]",
+                                              "body": "I'm mobile, agile and hostile right now, but look on Google Chrome (right click page?) and click \"Read Mode\" I believe your conversion would popup on right side, like an article, copy paste, POW Batman!",
+                                              "score": 1,
+                                              "created_utc": 1721221310.0,
+                                              "parent_id": "t1_ldlo354",
+                                              "is_submitter": false,
+                                              "replies": []
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "id": "mkvpnqj",
+                                          "author": "BluePlatypusFeet",
+                                          "body": "I hit quota in projects a LOT",
+                                          "score": 1,
+                                          "created_utc": 1743525733.0,
+                                          "parent_id": "t1_ldkajg0",
+                                          "is_submitter": false,
+                                          "replies": []
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "le0eoy9",
+                  "author": "Angelika1982",
+                  "body": "Same here. After a few messages I reached the limit. I have chat gpt which is awesome and no message limits .",
+                  "score": 1,
+                  "created_utc": 1721433682.0,
+                  "parent_id": "t1_l9yh4du",
+                  "is_submitter": false,
+                  "replies": []
+                },
+                {
+                  "id": "n8tf0nc",
+                  "author": "BridgeLeapX",
+                  "body": "Organiza essa ação coletiva aí que eu tô dentro. Tá osso usar o Claude. TNC",
+                  "score": 1,
+                  "created_utc": 1755258800.0,
+                  "parent_id": "t1_l9yh4du",
+                  "is_submitter": false,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "id": "ktrtgt2",
+              "author": "Vowsss",
+              "body": "Thanks so much. Assuming you are part of the Anthropic team. Great to see someone from there acknowledging it.",
+              "score": 4,
+              "created_utc": 1709822966.0,
+              "parent_id": "t1_ktrrqdo",
+              "is_submitter": true,
+              "replies": [
+                {
+                  "id": "n7x0soh",
+                  "author": "DustinChecketts",
+                  "body": "I just encountered this on the free version (a year later). Wondering if this is still an issue if I pay? Curious your experience if you're still using Claude.",
+                  "score": 1,
+                  "created_utc": 1754819926.0,
+                  "parent_id": "t1_ktrtgt2",
+                  "is_submitter": false,
+                  "replies": [
+                    {
+                      "id": "n9nm1sk",
+                      "author": "Levetamae",
+                      "body": "I just paid today and hit the limit just now.... I hit the limit with the free so I figured pro would be better.. and it still makes a ton of mistakes.",
+                      "score": 1,
+                      "created_utc": 1755662793.0,
+                      "parent_id": "t1_n7x0soh",
+                      "is_submitter": false,
+                      "replies": [
+                        {
+                          "id": "nvlb0j8",
+                          "author": "Bublotao",
+                          "body": "same",
+                          "score": 1,
+                          "created_utc": 1766516743.0,
+                          "parent_id": "t1_n9nm1sk",
+                          "is_submitter": false,
+                          "replies": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "na4r1j5",
+                      "author": "Old_Warthog7895",
+                      "body": "still an issue, i got limited after 10 prompts with pro",
+                      "score": 1,
+                      "created_utc": 1755892776.0,
+                      "parent_id": "t1_n7x0soh",
+                      "is_submitter": false,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "kx06h3s",
+              "author": "TacoQualityTester",
+              "body": "Hello!  Just thought I'd comment that I am subscribing to Pro and just hit a limit after 5 messages.  No documents or attachments, just a basic philosophical discussion.",
+              "score": 4,
+              "created_utc": 1711655846.0,
+              "parent_id": "t1_ktrrqdo",
+              "is_submitter": false,
+              "replies": [
+                {
+                  "id": "kxmoibj",
+                  "author": "BlNG0",
+                  "body": "Piggy backing.  very limiting for a paid LLM. Its happened on my only 2 sesssions thus far.",
+                  "score": 4,
+                  "created_utc": 1712018839.0,
+                  "parent_id": "t1_kx06h3s",
+                  "is_submitter": false,
+                  "replies": [
+                    {
+                      "id": "nerd4z8",
+                      "author": "CeeCee30N",
+                      "body": "Yea they worth over 175 billion dollars and cutting people short that pay 100 dollars per month are they serious ",
+                      "score": 1,
+                      "created_utc": 1758137553.0,
+                      "parent_id": "t1_kxmoibj",
+                      "is_submitter": false,
+                      "replies": []
+                    }
+                  ]
+                },
+                {
+                  "id": "l0t8sx2",
+                  "author": "Designer_Mulberry341",
+                  "body": "Same here, hitting limits after only 7 chats, no uploads. ",
+                  "score": 2,
+                  "created_utc": 1713828682.0,
+                  "parent_id": "t1_kx06h3s",
+                  "is_submitter": false,
+                  "replies": []
+                },
+                {
+                  "id": "kx6o18s",
+                  "author": "Striking-Word-4954",
+                  "body": "same here!... after way, way shorter conversations than with chatGPT",
+                  "score": 1,
+                  "created_utc": 1711757300.0,
+                  "parent_id": "t1_kx06h3s",
+                  "is_submitter": false,
+                  "replies": []
+                },
+                {
+                  "id": "l174evu",
+                  "author": "Fearless-Dust5631",
+                  "body": "same here!",
+                  "score": 1,
+                  "created_utc": 1714051658.0,
+                  "parent_id": "t1_kx06h3s",
+                  "is_submitter": false,
+                  "replies": []
+                },
+                {
+                  "id": "m1on538",
+                  "author": "Complex-Indication-8",
+                  "body": "Yes, same here STILL. They are scammers.",
+                  "score": 1,
+                  "created_utc": 1734007551.0,
+                  "parent_id": "t1_kx06h3s",
+                  "is_submitter": false,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "id": "lkxnl0m",
+              "author": "txjohn1969",
+              "body": "well its not resolved after 5 months.  I hit limit very quickly.  They system is very good, but hits a wall fast.  Is there any way to subscribe to a higher limit?",
+              "score": 4,
+              "created_utc": 1725160251.0,
+              "parent_id": "t1_ktrrqdo",
+              "is_submitter": false,
+              "replies": [
+                {
+                  "id": "mkmhar6",
+                  "author": "Pleasant-Intern-3195",
+                  "body": "I am having so many issues with these limits they've set. The weird this is, it only happens on their crappy website. When you use the models in something like Trae or VSCode they don't seem to have these message length limits. It's honestly the stupidest thing ever, how can an AI that runs perfectly fine in an editor, suddenly be so limited and throttled on the company's own website? Ridiculous.",
+                  "score": 1,
+                  "created_utc": 1743388618.0,
+                  "parent_id": "t1_lkxnl0m",
+                  "is_submitter": false,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "id": "kx9s94f",
+              "author": "b24home",
+              "body": "Still working? Because it is a viable chatbot for about five mins. And if Pro enables 5x the amount of messages, that's leaving much to be desired.",
+              "score": 3,
+              "created_utc": 1711816013.0,
+              "parent_id": "t1_ktrrqdo",
+              "is_submitter": false,
+              "replies": [
+                {
+                  "id": "leuw4j7",
+                  "author": "KanedaSyndrome",
+                  "body": "Yeh, you want more than 25 minutes of chat time before having to wait 5 hours. I tried with free just now and it's nice it can at least stick to instructions which chatGPT can't, but was only asking very easy questions and ran into my free limit, if I imagine having 5x that limit, it's still way too little to really matter.",
+                  "score": 2,
+                  "created_utc": 1721908634.0,
+                  "parent_id": "t1_kx9s94f",
+                  "is_submitter": false,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "id": "le0ej8k",
+              "author": "Angelika1982",
+              "body": "Apparently you didn’t fix it. I subscribed to pro and it hit the cap after a few messages and it kept getting it all wrong.",
+              "score": 3,
+              "created_utc": 1721433619.0,
+              "parent_id": "t1_ktrrqdo",
+              "is_submitter": false,
+              "replies": []
+            },
+            {
+              "id": "lmhjx3n",
+              "author": "BZ_Devil",
+              "body": "Are you still working on it? I am paying 40/month to ask 5 questions an hour?? WTF?? What the hell is the SLA on this? Jesus.",
+              "score": 3,
+              "created_utc": 1725996824.0,
+              "parent_id": "t1_ktrrqdo",
+              "is_submitter": false,
+              "replies": []
+            },
+            {
+              "id": "ku8zv7b",
+              "author": "Every-Exchange-6880",
+              "body": "Status?",
+              "score": 2,
+              "created_utc": 1710093615.0,
+              "parent_id": "t1_ktrrqdo",
+              "is_submitter": false,
+              "replies": [
+                {
+                  "id": "kub0tv1",
+                  "author": "jasondclinton",
+                  "body": "Almost there! Sorry!",
+                  "score": 6,
+                  "created_utc": 1710120218.0,
+                  "parent_id": "t1_ku8zv7b",
+                  "is_submitter": false,
+                  "replies": [
+                    {
+                      "id": "kunlk64",
+                      "author": "Sufficient_Pop4833",
+                      "body": "just happened to me. you should start crediting or prorating accounts that have this problem",
+                      "score": 3,
+                      "created_utc": 1710324270.0,
+                      "parent_id": "t1_kub0tv1",
+                      "is_submitter": false,
+                      "replies": []
+                    },
+                    {
+                      "id": "kwn5wpw",
+                      "author": "DietOrganic5621",
+                      "body": "hi I just signed up for pro and immeaditly it says I onkly have 10 messages available until 5 hours from now?",
+                      "score": 3,
+                      "created_utc": 1711461958.0,
+                      "parent_id": "t1_kub0tv1",
+                      "is_submitter": false,
+                      "replies": [
+                        {
+                          "id": "nas1fg4",
+                          "author": "It_is_for_Freedom_He",
+                          "body": "Wow that is horrifying. Did it get any better since u 1st subscribed to Pro?",
+                          "score": 1,
+                          "created_utc": 1756221587.0,
+                          "parent_id": "t1_kwn5wpw",
+                          "is_submitter": false,
+                          "replies": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "lb9pyuf",
+                      "author": "pinguluk",
+                      "body": "4 months and still nothing",
+                      "score": 2,
+                      "created_utc": 1719920222.0,
+                      "parent_id": "t1_kub0tv1",
+                      "is_submitter": false,
+                      "replies": []
+                    },
+                    {
+                      "id": "leze9ck",
+                      "author": "Scooter_Bean",
+                      "body": "Yea this is still happening, Happening a good bit to me actually and kinda sucks after paying $20",
+                      "score": 2,
+                      "created_utc": 1721966252.0,
+                      "parent_id": "t1_kub0tv1",
+                      "is_submitter": false,
+                      "replies": [
+                        {
+                          "id": "lhnql04",
+                          "author": "theTechRun",
+                          "body": "This is good to know because i was considering subscribing.",
+                          "score": 1,
+                          "created_utc": 1723415873.0,
+                          "parent_id": "t1_leze9ck",
+                          "is_submitter": false,
+                          "replies": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "kup9dee",
+                      "author": "Firm-Contest6430",
+                      "body": "Thanks for providing updates and keep up the great work!",
+                      "score": 1,
+                      "created_utc": 1710348992.0,
+                      "parent_id": "t1_kub0tv1",
+                      "is_submitter": false,
+                      "replies": []
+                    },
+                    {
+                      "id": "l9mgcik",
+                      "author": "Aggressive_Bee_8443",
+                      "body": "I have just registered, and getting 429 on onboarding page!",
+                      "score": 1,
+                      "created_utc": 1718981682.0,
+                      "parent_id": "t1_kub0tv1",
+                      "is_submitter": false,
+                      "replies": [
+                        {
+                          "id": "nas1kof",
+                          "author": "It_is_for_Freedom_He",
+                          "body": "429 what?",
+                          "score": 1,
+                          "created_utc": 1756221628.0,
+                          "parent_id": "t1_l9mgcik",
+                          "is_submitter": false,
+                          "replies": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "lopf0pv",
+                      "author": "Formal-Difficulty321",
+                      "body": "Still not there.",
+                      "score": 1,
+                      "created_utc": 1727192425.0,
+                      "parent_id": "t1_kub0tv1",
+                      "is_submitter": false,
+                      "replies": [
+                        {
+                          "id": "lozptcb",
+                          "author": "Plastic_Chemistry_50",
+                          "body": "So fucking irritating! It still not unlimited messages like GPT f",
+                          "score": 1,
+                          "created_utc": 1727340750.0,
+                          "parent_id": "t1_lopf0pv",
+                          "is_submitter": false,
+                          "replies": [
+                            {
+                              "id": "lp1z764",
+                              "author": "sigma_4",
+                              "body": "i canceled my subscription  what a shitty platform",
+                              "score": 1,
+                              "created_utc": 1727372926.0,
+                              "parent_id": "t1_lozptcb",
+                              "is_submitter": false,
+                              "replies": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "lp1ec9m",
+                      "author": "sigma_4",
+                      "body": "7 months and still the same issue!!! this is BS",
+                      "score": 1,
+                      "created_utc": 1727366486.0,
+                      "parent_id": "t1_kub0tv1",
+                      "is_submitter": false,
+                      "replies": [
+                        {
+                          "id": "mdjsab0",
+                          "author": "FanArtistry",
+                          "body": "It's been a year and still happening. :(",
+                          "score": 1,
+                          "created_utc": 1739933542.0,
+                          "parent_id": "t1_lp1ec9m",
+                          "is_submitter": false,
+                          "replies": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "mc1sjgk",
+                      "author": "thequeenishere29",
+                      "body": "still having this problem. is there a workaround or a solution?",
+                      "score": 1,
+                      "created_utc": 1739209619.0,
+                      "parent_id": "t1_kub0tv1",
+                      "is_submitter": false,
+                      "replies": []
+                    },
+                    {
+                      "id": "mvq2kov",
+                      "author": "FindingMuch4045",
+                      "body": "Still happening dude...what a joke. Paying nearly 20 just to hit a usage cap? what’s even the difference between the free and pro plan? This is the first and last time I use Claude.....",
+                      "score": 1,
+                      "created_utc": 1748930088.0,
+                      "parent_id": "t1_kub0tv1",
+                      "is_submitter": false,
+                      "replies": [
+                        {
+                          "id": "n0hhajs",
+                          "author": "Soft-Recipe-9817",
+                          "body": "I paid for the x20 max plan and still keep hitting maximum length for the conversation, nice done :)",
+                          "score": 1,
+                          "created_utc": 1751237593.0,
+                          "parent_id": "t1_mvq2kov",
+                          "is_submitter": false,
+                          "replies": [
+                            {
+                              "id": "nas1v61",
+                              "author": "It_is_for_Freedom_He",
+                              "body": "Are u serious?  Whoa.",
+                              "score": 1,
+                              "created_utc": 1756221712.0,
+                              "parent_id": "t1_n0hhajs",
+                              "is_submitter": false,
+                              "replies": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "n6htki1",
+                      "author": "Thin-Lifeguard-509",
+                      "body": "planning to switch to pro :&gt; is issue resolved ?",
+                      "score": 1,
+                      "created_utc": 1754122440.0,
+                      "parent_id": "t1_kub0tv1",
+                      "is_submitter": false,
+                      "replies": [
+                        {
+                          "id": "n787yqs",
+                          "author": "Aklaro_o",
+                          "body": "no, pague claude y la única diferencia es que te deja utilizar la ultima versión claude opus 4.1 que de igual forma que sea algo potente consume mas para que te limite mas, ya que al escribirle te da un limite hasta cierta hora para seguir escribiendo y aunque no te moleste esperar cierto tiempo cada chat no importa lo que sea tiene un limite de longitud en cual no importa si pagas max o pro es imposible seguir esa conversación y no se guardan. Podrías crear un proyecto y ahí claude tiene contexto si vas a otra conversación pero sigue siendo difícil tener que adaptar cada conversación y esperar un resultado igual o mejor. Eh pensado irme directamente a chatgpt que sacaran nueva versiones y ya hay un modo agente así que ten en cuenta todo esto",
+                          "score": 1,
+                          "created_utc": 1754486718.0,
+                          "parent_id": "t1_n6htki1",
+                          "is_submitter": false,
+                          "replies": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "nerdb5a",
+                      "author": "CeeCee30N",
+                      "body": "Is there an updated status i keep getting cut off and im paying 100 dollars per month",
+                      "score": 1,
+                      "created_utc": 1758137601.0,
+                      "parent_id": "t1_kub0tv1",
+                      "is_submitter": false,
+                      "replies": []
+                    },
+                    {
+                      "id": "nflbuc7",
+                      "author": "Living_Reaction_6032",
+                      "body": "Franchement ça devient frustrant de voir la limite d'usage à peine de 8 messages",
+                      "score": 1,
+                      "created_utc": 1758546096.0,
+                      "parent_id": "t1_kub0tv1",
+                      "is_submitter": false,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "kxoxtix",
+              "author": "lapzkauz",
+              "body": "Any updates (or guesstimates as to how close an update is) on this? Getting \"10 messages left\" warnings very quickly on Opus. ",
+              "score": 2,
+              "created_utc": 1712063380.0,
+              "parent_id": "t1_ktrrqdo",
+              "is_submitter": false,
+              "replies": []
+            },
+            {
+              "id": "kytxepc",
+              "author": "[deleted]",
+              "body": "you guys cooked up some amazing stuff, claude 3 is amazing in my experience! your team is awesome",
+              "score": 2,
+              "created_utc": 1712698409.0,
+              "parent_id": "t1_ktrrqdo",
+              "is_submitter": false,
+              "replies": []
+            },
+            {
+              "id": "l1zl2o1",
+              "author": "Far_Tadpole7469",
+              "body": "This was a complete an utter lie, just like this was \"Their Pro subscription flings open the doors to unlimited use! For just a few dollars a month, you’re done with the old restrictions (8 messages/hour). Currently, for $20, you can unlock complete use of Anthropic’s most powerful model: Opus!\"  Here we are April 30th and paying $20 per month for a few alotted messages per day.",
+              "score": 2,
+              "created_utc": 1714506843.0,
+              "parent_id": "t1_ktrrqdo",
+              "is_submitter": false,
+              "replies": []
+            },
+            {
+              "id": "l5fcs5w",
+              "author": "coffeenz",
+              "body": "Still no fix. Wish I'd realised there was a limit even on pro! Obviously will be cancelling after the month is over.",
+              "score": 2,
+              "created_utc": 1716524124.0,
+              "parent_id": "t1_ktrrqdo",
+              "is_submitter": false,
+              "replies": []
+            },
+            {
+              "id": "lngnoy3",
+              "author": "Surprise-Brave",
+              "body": "Dude this is happening to me now, what is the deal and how do I reach a human being this has been going on for me for a week, I pay for [Claude.ai](http://Claude.ai) pro",
+              "score": 2,
+              "created_utc": 1726517331.0,
+              "parent_id": "t1_ktrrqdo",
+              "is_submitter": false,
+              "replies": []
+            },
+            {
+              "id": "lu1r14a",
+              "author": "nyc008",
+              "body": "I have the same problem. I signed up for the PRO plan but I don't see 5x use. It's constantly giving me limits messages in the early parts of the task, treating it like a free plan.",
+              "score": 2,
+              "created_utc": 1730053757.0,
+              "parent_id": "t1_ktrrqdo",
+              "is_submitter": false,
+              "replies": []
+            },
+            {
+              "id": "kttikzg",
+              "author": "Jason-Griffin",
+              "body": "I can see why, keep up the great work!",
+              "score": 1,
+              "created_utc": 1709845011.0,
+              "parent_id": "t1_ktrrqdo",
+              "is_submitter": false,
+              "replies": []
+            },
+            {
+              "id": "l181thz",
+              "author": "idreamgeek",
+              "body": "i'm a pro subscriber and rely on it heavily for coding but hit the cap very very quickly, will this be fixed soon??",
+              "score": 1,
+              "created_utc": 1714062997.0,
+              "parent_id": "t1_ktrrqdo",
+              "is_submitter": false,
+              "replies": [
+                {
+                  "id": "m8xfi8b",
+                  "author": "ai_magic",
+                  "body": "Agreed - I keep hitting limits due to the code it helped write being in the chat. But having to open a new chat and provide everything again for reference is just as bad.",
+                  "score": 1,
+                  "created_utc": 1737734183.0,
+                  "parent_id": "t1_l181thz",
+                  "is_submitter": false,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "id": "l5mwjh6",
+              "author": "markeus101",
+              "body": "whats the point of paying? i couldnt even get like 30 mins of usage and you're saying i have to stop working and wait for 5 hours?",
+              "score": 1,
+              "created_utc": 1716657519.0,
+              "parent_id": "t1_ktrrqdo",
+              "is_submitter": false,
+              "replies": []
+            },
+            {
+              "id": "l6bzo89",
+              "author": "anakrutz111",
+              "body": "Facing the same issue in India.",
+              "score": 1,
+              "created_utc": 1717080959.0,
+              "parent_id": "t1_ktrrqdo",
+              "is_submitter": false,
+              "replies": [
+                {
+                  "id": "nadin89",
+                  "author": "y107cocks",
+                  "body": "Canada too. no risk of venemous snakes here but presumably lonelier",
+                  "score": 1,
+                  "created_utc": 1756018777.0,
+                  "parent_id": "t1_l6bzo89",
+                  "is_submitter": false,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "id": "locccy6",
+              "author": "spiritdancer1",
+              "body": "It just sucks because as soon as you get in a good flow of work - boom - no more messages!  Why can't you just throttle down to a lower model like Chatgpt? Its annoying because I like having a single chat or project for each subject. But now I have to have separate chats on other models just to finish what I want to do . Then to continue  I have to remember which model had my latest work. I have to reach ChatGPT what I was doing on Claude to continue. It's a mess. A mess I can work with but I wish Claude could just throttle down instead of kicking me out. Why not allow us to buy more priority with a higher plan?  Oh well, I guess I have to continue with the messy workflow for now.",
+              "score": 1,
+              "created_utc": 1727000941.0,
+              "parent_id": "t1_ktrrqdo",
+              "is_submitter": false,
+              "replies": []
+            },
+            {
+              "id": "lxamt8g",
+              "author": "[deleted]",
+              "body": "8 months ago and still facing the same issue....",
+              "score": 1,
+              "created_utc": 1731691487.0,
+              "parent_id": "t1_ktrrqdo",
+              "is_submitter": false,
+              "replies": [
+                {
+                  "id": "lxwfh70",
+                  "author": "MX_WOODS",
+                  "body": "Ja, Aktuell wieder echt übel aber es war die letzten Wochen nicht so extrem ",
+                  "score": 1,
+                  "created_utc": 1732006926.0,
+                  "parent_id": "t1_lxamt8g",
+                  "is_submitter": false,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "id": "m5tvbm2",
+              "author": "FrankieNeil",
+              "body": "How do I communicate with you",
+              "score": 1,
+              "created_utc": 1736228045.0,
+              "parent_id": "t1_ktrrqdo",
+              "is_submitter": false,
+              "replies": []
+            },
+            {
+              "id": "m5w8yi7",
+              "author": "Quick-Direction3341",
+              "body": "Even after having professional plan of claude, still getting usage limits. So frustrating for the paid subscription.",
+              "score": 1,
+              "created_utc": 1736268210.0,
+              "parent_id": "t1_ktrrqdo",
+              "is_submitter": false,
+              "replies": []
+            },
+            {
+              "id": "m7ts68v",
+              "author": "impactdemocracy",
+              "body": "It is now 2025 and Claude Pro is still semi-useless as a programming assistant. You ask it to handle a task, it gives you incorrect code changes.  You have to correct it several times and then suddenly it says you reached your usage limit.  I only made one request. The back and forth is caused by its errors.  I should tell it that it exceeded MY usage limit until 10PM.",
+              "score": 1,
+              "created_utc": 1737219259.0,
+              "parent_id": "t1_ktrrqdo",
+              "is_submitter": false,
+              "replies": [
+                {
+                  "id": "nas3jrt",
+                  "author": "It_is_for_Freedom_He",
+                  "body": "😅🤣😂",
+                  "score": 1,
+                  "created_utc": 1756222192.0,
+                  "parent_id": "t1_m7ts68v",
+                  "is_submitter": false,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "id": "mcapg27",
+              "author": "Glad_Paramedic6891",
+              "body": "I stopped using Claude due to this annoyance and like an idiot have continued to pay the monthly fee, so decided to try it out again today.  Nah-uh same shit nearly a year later... message limits.. why??? I paid you over $100 waiting for you to fix this issue... ChatGPT does not stop my creative flow... claude pauses it for hours!",
+              "score": 1,
+              "created_utc": 1739326197.0,
+              "parent_id": "t1_ktrrqdo",
+              "is_submitter": false,
+              "replies": []
+            },
+            {
+              "id": "mcqmyy4",
+              "author": "_arjunghosh_",
+              "body": "Jason, the issue is ChatGPT 4o and Clude Sonnet are two comparably powerful SaaS Ai pout there which I have noth payed for. I have been running on ChatGPt and it only slowed down (not even crashed or stopped ot limiited after 30hrs, yes AFTER 30hrs (was on a binging on coding and documentation) and WTfudge moment was the chatbot comes out and tells me how to ensure my session does not crash and how to save my data as chatbot felt it memory was going to run out (bery cute CX feature if not natural AI!). Whereas I shifted to Claude, copy paste my entire 30hrs of log and Claude crashed withinn 10min. Yes 10mins and said I was out of length limit and then I got this error \"\"Message limit reached for Claude 3.5 Sonnet until 10:30 PM.\" at around 8pm my time zone. My issue is even if you all powrerful and good feature wise, if you can not scale, then what teh use. I am in serious mind to recall my money back. As I have taken this a schatGPT back as I do NOT want to use Deepseek (yes as its chinese and here in INdia a warning has been issued and as uch my IT org has banned it for sec issues). So what option expect me running llama on my own cloud.Notb happening. Anthpic do something or you will lose the race and also $$$$",
+              "score": 1,
+              "created_utc": 1739545426.0,
+              "parent_id": "t1_ktrrqdo",
+              "is_submitter": false,
+              "replies": [
+                {
+                  "id": "mcqon5m",
+                  "author": "Key-Boat-7519",
+                  "body": "Message limits suck. I’ve been there too – paying for pro stuff only to hit a wall when I’m in the middle of a long session. It feels like playing a bad video game where you just wait forever for your turn. Once, while coding for hours, I got slammed by these limits and had to start over, which was super annoying. I’ve tried some old-school tools like Discord bots and Slack integrations to keep connected, but Pulse for Reddit turned out better for sticking with the flow. Message limits really kill the vibe and make everything feel like a wasted effort.",
+                  "score": 1,
+                  "created_utc": 1739545961.0,
+                  "parent_id": "t1_mcqmyy4",
+                  "is_submitter": false,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "id": "mdjry33",
+              "author": "FanArtistry",
+              "body": "A year later and the message limits are still insanely small. I want the ability to pay more money for a higher limit. Is this coming anytime soon? The \"Pro\" plan doesn't seem like it was made for professional use, as one would think it was from the name.",
+              "score": 1,
+              "created_utc": 1739933423.0,
+              "parent_id": "t1_ktrrqdo",
+              "is_submitter": false,
+              "replies": []
+            },
+            {
+              "id": "mi9nr70",
+              "author": "SchwartzReports",
+              "body": "Yeah, it's a year later and I even on Pro I immediately faced the same problem. It's gotten so bad that I hit the maximum length even from analyzing two small PDF files. I get one question and that's it. Congratulations, you got my $20. Heading to Gemini...",
+              "score": 1,
+              "created_utc": 1742223253.0,
+              "parent_id": "t1_ktrrqdo",
+              "is_submitter": false,
+              "replies": []
+            },
+            {
+              "id": "mlwliug",
+              "author": "Jerichomiles",
+              "body": "A year later still the stingiest AI on earth. Ridiculous limits for paying users that many AI don't have on their free versions. Not sure why you'd really have any limits at all on paying users. I don't see what that would even gain? Normally that gets people to sign up but since we're already subscribed the only thing you might be looking for is to get people to unsubscribe..",
+              "score": 1,
+              "created_utc": 1744050730.0,
+              "parent_id": "t1_ktrrqdo",
+              "is_submitter": false,
+              "replies": []
+            },
+            {
+              "id": "mtt4jzs",
+              "author": "UpstairsOk5967",
+              "body": "Till not fixed the limit issue on pro mode",
+              "score": 1,
+              "created_utc": 1747994473.0,
+              "parent_id": "t1_ktrrqdo",
+              "is_submitter": false,
+              "replies": []
+            },
+            {
+              "id": "mtt6mf1",
+              "author": "UpstairsOk5967",
+              "body": "I just do one message using Desktop commander and usage Limit Reached in Pro Mode   \ni found this very annoying   \ni am only able to use it for 5 minutes now need to wait for other 5 hours   \nClaude you are loosing geniun customers due to this",
+              "score": 1,
+              "created_utc": 1747995611.0,
+              "parent_id": "t1_ktrrqdo",
+              "is_submitter": false,
+              "replies": []
+            },
+            {
+              "id": "mzahihp",
+              "author": "MissionEnthusiasm746",
+              "body": "Hi! I’m having quite the time of it with Claude 4.0. It was mostly positive until Wednesday, June 18th. Then I had an experience that reminded me of the lack of safety and toxic emotional responses characterized by Chat GPT. After that Claude will time out without warning just after a few chat texts telling me I’ve hit my limit when in fact I’ve not. Are you still fixing this?",
+              "score": 1,
+              "created_utc": 1750663318.0,
+              "parent_id": "t1_ktrrqdo",
+              "is_submitter": false,
+              "replies": []
+            },
+            {
+              "id": "n0sjyzy",
+              "author": "Always_the_NewGuy",
+              "body": "July 1st, 2025 here.  I cancelled my subscription due to the restrictive limits.  I can't get anything done; I've moving on to a new product.",
+              "score": 1,
+              "created_utc": 1751390532.0,
+              "parent_id": "t1_ktrrqdo",
+              "is_submitter": false,
+              "replies": []
+            },
+            {
+              "id": "n2ddw6u",
+              "author": "realystic74",
+              "body": "getting this now even with pro its ridiculous",
+              "score": 1,
+              "created_utc": 1752158453.0,
+              "parent_id": "t1_ktrrqdo",
+              "is_submitter": false,
+              "replies": []
+            },
+            {
+              "id": "n3pjzor",
+              "author": "s4ndr34s",
+              "body": "pro plan, 5 messages limit reached 🤔😅😂🙈",
+              "score": 1,
+              "created_utc": 1752788968.0,
+              "parent_id": "t1_ktrrqdo",
+              "is_submitter": false,
+              "replies": []
+            },
+            {
+              "id": "nvlawnp",
+              "author": "Bublotao",
+              "body": "Its been two years and the bug has gotten worse, hit the limit without getting anything done, worse of all? ui kept crashing and the chat disappearing, very pathetic",
+              "score": 1,
+              "created_utc": 1766516710.0,
+              "parent_id": "t1_ktrrqdo",
+              "is_submitter": false,
+              "replies": []
+            },
+            {
+              "id": "nzy44qk",
+              "author": "Monk-testy",
+              "body": "I paid for more time and it did not give it to me... ughhh I want to use it but lawd this is preventing me to add another month.",
+              "score": 1,
+              "created_utc": 1768581548.0,
+              "parent_id": "t1_ktrrqdo",
+              "is_submitter": false,
+              "replies": []
+            },
+            {
+              "id": "o4d5y2w",
+              "author": "ImpossibleMusician27",
+              "body": "Lächerlich. Habe mir gestern Pro gekauft, fünf lächerliche Nachrichten mehr geschickt und schon war das Limit erreicht. ",
+              "score": 1,
+              "created_utc": 1770604563.0,
+              "parent_id": "t1_ktrrqdo",
+              "is_submitter": false,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "id": "ktr9dab",
+          "author": "imaloserdudeWTF",
+          "body": "Anthropic is blowing up on YouTube since every LLM and chatbot talking head is reviewing Claude3 vs its competitors, and the data shows that Claude3 is kicking A$$ and taking names, so I wouldn't be surprised if everyone is doing their own comparisons right now (I did yesterday), hence the uptick in traffic and Anthropic's need to dial down the access at this moment.  I also used Opus yesterday for most of the day (no pauses) instead of GPT4 for my queries.  But, I use the $20 plan.  One video I watched pointed out that it is likely that you get 20 queries while I get five times that amount (for standard, quick replies, though long uploads may reduce that amount due to the amount of tokens).  If I remember it correctly, you don't have access to Opus with the free version, but the free version still performed monsterably well in comparisons.  Here is a solution:  switch between the biggest LLMs (Claude3, GPT3.5, and Gemini \\[was Bard\\]) when you need work done (if possible).  \n\n[https://gemini.google.com/app](https://gemini.google.com/app)",
+          "score": 6,
+          "created_utc": 1709814413.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": [
+            {
+              "id": "ktrccd9",
+              "author": "Vowsss",
+              "body": "Makes sense. I'm even switching between Gemini Advanced, GPT 3.5 and Claude3. The thing is that I am on the 20 dollar plan with access to Opus even",
+              "score": 3,
+              "created_utc": 1709815880.0,
+              "parent_id": "t1_ktr9dab",
+              "is_submitter": true,
+              "replies": [
+                {
+                  "id": "ktrgb4x",
+                  "author": "imaloserdudeWTF",
+                  "body": "I have all three tabs open at the moment, something I do each day, along with my other tabs (email, Reddit, and a random Google one for quick help in spelling)\n\nhttps://preview.redd.it/s8ax162nxwmc1.png?width=555&amp;format=png&amp;auto=webp&amp;s=449834a6f49be60f6a494112159ade7f2234cf7e",
+                  "score": 1,
+                  "created_utc": 1709817701.0,
+                  "parent_id": "t1_ktrccd9",
+                  "is_submitter": false,
+                  "replies": [
+                    {
+                      "id": "ktrhfin",
+                      "author": "Vowsss",
+                      "body": "Cool! I was doing that with GPT and Gemini. Only started using Claude yesterday.",
+                      "score": 2,
+                      "created_utc": 1709818189.0,
+                      "parent_id": "t1_ktrgb4x",
+                      "is_submitter": true,
+                      "replies": []
+                    },
+                    {
+                      "id": "kuwidwh",
+                      "author": "[deleted]",
+                      "body": "I have 20 AI tabs, and 15 from [poe.com](http://poe.com) 😆I really like claude. It's just a different vibe. I enjoy casual mode in gemini. And like coding with chatgpt. For fast response I use llama inside poe. And for Internet I use perplexity ai. Mutifaceted world. For images I use playground and midjourney. For browsing I use bing, opera and brave AI's, depending on the browser am on.",
+                      "score": 1,
+                      "created_utc": 1710453859.0,
+                      "parent_id": "t1_ktrgb4x",
+                      "is_submitter": false,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ktqyejv",
+          "author": "HAZE-L",
+          "body": "Same here! Just bought Pro, and after like 20- messages in a span of 5 hours. Rate Limit! It's rediculous.",
+          "score": 3,
+          "created_utc": 1709807821.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": [
+            {
+              "id": "ktqzvfu",
+              "author": "Vowsss",
+              "body": "I'm sayinggg. I can't even use it.",
+              "score": 2,
+              "created_utc": 1709808822.0,
+              "parent_id": "t1_ktqyejv",
+              "is_submitter": true,
+              "replies": [
+                {
+                  "id": "ktr14ir",
+                  "author": "HAZE-L",
+                  "body": "There must be something wrong with their server. But my friends who have used Pro for months said theirs worked fine tho. Idk, maybe only us new subscribers have this problem.",
+                  "score": 1,
+                  "created_utc": 1709809644.0,
+                  "parent_id": "t1_ktqzvfu",
+                  "is_submitter": false,
+                  "replies": [
+                    {
+                      "id": "lbbuz0j",
+                      "author": "Firm-Employment-9253",
+                      "body": "Hey do you still have this problem or is it fixed?",
+                      "score": 1,
+                      "created_utc": 1719947655.0,
+                      "parent_id": "t1_ktr14ir",
+                      "is_submitter": false,
+                      "replies": []
+                    }
+                  ]
+                },
+                {
+                  "id": "ktrne0b",
+                  "author": "equl99",
+                  "body": "How was the accuracy of his answers Opus model?",
+                  "score": 1,
+                  "created_utc": 1709820648.0,
+                  "parent_id": "t1_ktqzvfu",
+                  "is_submitter": false,
+                  "replies": [
+                    {
+                      "id": "ktrtqtn",
+                      "author": "Vowsss",
+                      "body": "Me personally, I used Opus for code in C#. It performed fairly well. Having some small issues here and there but ultimately, was solid. Peforms better than Gemini Ultra (which I use daily) and GPT 3.5",
+                      "score": 2,
+                      "created_utc": 1709823067.0,
+                      "parent_id": "t1_ktrne0b",
+                      "is_submitter": true,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kwup3s4",
+          "author": "YouTubeRetroGaming",
+          "body": "I am using Opus for work and I run out of messages in less than 30 mins. I had to structure my day around the 5 hour windows.",
+          "score": 3,
+          "created_utc": 1711571053.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": [
+            {
+              "id": "kwuplg7",
+              "author": "Vowsss",
+              "body": "Yeah. I had to do that too. That’s why I don’t use it for light stuff maybe I use Gemini both through the normal web app and through the ai studio. And GPT. If I still want to use Claude for light stuff, I either use opus for a brief period or switch to Sonnet(mostly when I have been rate limited for Opus).",
+              "score": 2,
+              "created_utc": 1711571215.0,
+              "parent_id": "t1_kwup3s4",
+              "is_submitter": true,
+              "replies": [
+                {
+                  "id": "kwwmzg6",
+                  "author": "YouTubeRetroGaming",
+                  "body": "Same here. Bottom line is, while Claude is objectively better than GPT-4, it has become unusable for anyone using it professionally.",
+                  "score": 2,
+                  "created_utc": 1711597240.0,
+                  "parent_id": "t1_kwuplg7",
+                  "is_submitter": false,
+                  "replies": [
+                    {
+                      "id": "kwz4j1n",
+                      "author": "Vowsss",
+                      "body": "Pretty much.",
+                      "score": 1,
+                      "created_utc": 1711643294.0,
+                      "parent_id": "t1_kwwmzg6",
+                      "is_submitter": true,
+                      "replies": [
+                        {
+                          "id": "ls8qcqs",
+                          "author": "warlord2000ad",
+                          "body": "I just came to try Claude after some questionable responses from chatgpt 4, but very quickly hit limits. It makes the pro version pointless if you can't get a completed chat done.",
+                          "score": 1,
+                          "created_utc": 1729103998.0,
+                          "parent_id": "t1_kwz4j1n",
+                          "is_submitter": false,
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "kx9sbq5",
+              "author": "b24home",
+              "body": "CRAZY",
+              "score": 1,
+              "created_utc": 1711816040.0,
+              "parent_id": "t1_kwup3s4",
+              "is_submitter": false,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "id": "kx1zwf0",
+          "author": "RasberryBeretPRN1985",
+          "body": "Sooo the post below was 22 days ago. I just signed up for Claude 3 Opus (Pro) due to all the hype and while it is really good. I keep getting kicked out.   \n\n\nI get some crazy error about toxic  output . then it stops and starts my conversation over as if I never hit send /enter.  I am writing code (Swift) so I assume its something in the code that doesn't understand or recognize. \n\nFinally after trying to track down the source of the error,  I was told I hit my limit. I was sooo close! So that sucks, and I feel it was a waste of $20.00 I wish it could have told me more definitively what was causing the error.   \n\n\nI feel like a Seinfeld Character in the Soup Kitchen Episode. You Ask Too Many Questions!\n\n![gif](giphy|j2pOFyuTJqWj9S5qdE)\n\n  \nAnyway hoping they can fix this soon. Bit of a let down though, all the hype and NO SOUP!  \nGPT 4 is better at giving you answers and follow up.   \n\n\nClaude 3 Opus is nice but having worked at Apple, MS, and Qualcomm it reminds me of the days when they would roll out new tech thats buggy as hell but customized for that specific event or set of functions, but fails miserably with public use.   \n\n\nSO while its good... NOT sure how they came up with this is a GPT 4 killer. Me Thinks NOT.   \nIT may not have been tested by real world people who will try and beat the brakes off this Bitch! :-)  \n\n\nChatGPT while its token limitations are obvious I can reliably go back to it as start a gain.   \nClaude 3 Opus just shut me down.   \n\n\nGoing to check out Groq and Apples M3 next. It occurs to me, that the cloud model might not be the best thing after all. If I can use an Open source model with Groq or M3 ( running locally) It may be the best of both worlds Open Source with local hardware Groq cards start at 28K so the price definitely have to come down.  But the M3... I can swing that.   \n\n\nBut it's been 22 days and they still haven't fixed it, and something tells me they won't be able to fix this in the next 30-60 days.    \n\n\nPlus I'm out 20 bucks, So what do I have to loose?\n\nMy .02 cents.   \nThanks!",
+          "score": 3,
+          "created_utc": 1711679771.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "kxq2w7w",
+          "author": "bartekjach86",
+          "body": "I've literally opened it up this morning after not using it for at least 24h and it started me off with a \"Rate exceeded.\" on a white screen. And I have a paid sub. They really need to address this.",
+          "score": 3,
+          "created_utc": 1712077822.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": [
+            {
+              "id": "nerflds",
+              "author": "CeeCee30N",
+              "body": "Me too man i pay100 dollars a month this is unacceptable frfr",
+              "score": 2,
+              "created_utc": 1758138250.0,
+              "parent_id": "t1_kxq2w7w",
+              "is_submitter": false,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "id": "kyj3rcg",
+          "author": "[deleted]",
+          "body": "I just send 6 short messages on a fresh chat and am already being warned I only have 7 messages left. What the hell? I have a Pro account. This is wild.",
+          "score": 3,
+          "created_utc": 1712526454.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": [
+            {
+              "id": "kylp4sm",
+              "author": "Vowsss",
+              "body": "They just made an update to the rate limits on their site. It makes more sense now.",
+              "score": 1,
+              "created_utc": 1712574656.0,
+              "parent_id": "t1_kyj3rcg",
+              "is_submitter": true,
+              "replies": [
+                {
+                  "id": "kytvz33",
+                  "author": "jkende",
+                  "body": "How does it make more sense now? I'm getting 20-22 messages (counting Claude's responses) every 5 hours. It's absurd",
+                  "score": 1,
+                  "created_utc": 1712697900.0,
+                  "parent_id": "t1_kylp4sm",
+                  "is_submitter": false,
+                  "replies": [
+                    {
+                      "id": "kytyk34",
+                      "author": "Vowsss",
+                      "body": "I think it varies. But I get what you mean. Facing similar stuff as well.",
+                      "score": 2,
+                      "created_utc": 1712698823.0,
+                      "parent_id": "t1_kytvz33",
+                      "is_submitter": true,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "nerfz5i",
+              "author": "CeeCee30N",
+              "body": "I got max and they doing me like this \n\n\nError sending message\n\nYou've reached the limit\n\nfor Claude messages at\n\nthis time. Please wait\n\nbefore trying again.",
+              "score": 1,
+              "created_utc": 1758138360.0,
+              "parent_id": "t1_kyj3rcg",
+              "is_submitter": false,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "id": "ldrj5ms",
+          "author": "robokuma",
+          "body": "Just paid for a Pro subscription and I’m already hitting a message limit. Unbelievable!",
+          "score": 3,
+          "created_utc": 1721307129.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "ldssi9b",
+          "author": "TR-808",
+          "body": "I paid for pro last night, asked maybe 20 questions. Rate limited for 8 hours now. WTF? \n\nCancelled.",
+          "score": 3,
+          "created_utc": 1721322851.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "kx0ckvw",
+          "author": "ninjalittle",
+          "body": "adding to the discussion from a paid subscriber. One query today and getting rate limit message, also forced to log out and now getting rate limit message when entering my email three tries to log in.",
+          "score": 2,
+          "created_utc": 1711657910.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": [
+            {
+              "id": "kx0xg0q",
+              "author": "tlctressa",
+              "body": "Same problem here yo what’s going on ?",
+              "score": 1,
+              "created_utc": 1711665048.0,
+              "parent_id": "t1_kx0ckvw",
+              "is_submitter": false,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "id": "kxxq846",
+          "author": "Galberz",
+          "body": " I have barely used Opus today and now I’m being told I have 6 messages left. Have they reduced the message limit?",
+          "score": 2,
+          "created_utc": 1712188343.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": [
+            {
+              "id": "kygymg4",
+              "author": "Timely-Today-5058",
+              "body": "me too what a pile of garbage. I've been 'pro' for a month or so. I use it perhaps 2 or 3 times a week. Yet today after 4 or 5 messages Im getting the message limit. They take your money but dont give a crap! thats big business for you, they're not interested in the peasants",
+              "score": 1,
+              "created_utc": 1712498872.0,
+              "parent_id": "t1_kxxq846",
+              "is_submitter": false,
+              "replies": [
+                {
+                  "id": "nerfv6l",
+                  "author": "CeeCee30N",
+                  "body": "They sure aint man ",
+                  "score": 1,
+                  "created_utc": 1758138329.0,
+                  "parent_id": "t1_kygymg4",
+                  "is_submitter": false,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "id": "nerfr1w",
+              "author": "CeeCee30N",
+              "body": "I pay for max and they did me the same way \n\n\nError sending message\n\nYou've reached the limit\n\nfor Claude messages at\n\nthis time. Please wait\n\nbefore trying again.",
+              "score": 1,
+              "created_utc": 1758138296.0,
+              "parent_id": "t1_kxxq846",
+              "is_submitter": false,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "id": "lcnpxb5",
+          "author": "Nike_Zoldyck",
+          "body": "Finally got to a good place in helping the model understand my requirements and before we get to the actual code generation i get rate limited. wtf. How am i supposed to use it. Seems like they are just collecting data and not letting anyone use it. I susbcribed to pro for sonnet for god's sake",
+          "score": 2,
+          "created_utc": 1720697084.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "ldjotvk",
+          "author": "cperazza",
+          "body": "The same here—I paid for Pro and have a limit of 10 messages for a period of around 5 to 6 hours. That's absolutely ridiculous for a paid subscription, and it made me feel like paying for ChatGPT was not that bad.  \nI wish I had known about the limitations before cancelling ChatGPT and subscribing to Claude.",
+          "score": 2,
+          "created_utc": 1721181165.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "le0edef",
+          "author": "Angelika1982",
+          "body": "I want a refund! I switched to pro and it didn’t get it , it was super dumb and after 10 messages it said I reached the limit. Waste of money. I’m gonna request a refund. I have ChatGPT 4o and there us  no comparison. It always had unlimited messages even the free version",
+          "score": 2,
+          "created_utc": 1721433553.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "lj1p6af",
+          "author": "Illustrious_Matter_8",
+          "body": "just wrote only a few smaller questions and i get limited... is it broken?",
+          "score": 2,
+          "created_utc": 1724164440.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "lyiayxr",
+          "author": "boozer87",
+          "body": "Message limit reached for Claude 3.5 Sonnet until 5 AM. You may still be able to continue on Claude 3 Haiku! Why do we have to pay and use this premium version?!!!!!",
+          "score": 2,
+          "created_utc": 1732323706.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "m08xxqa",
+          "author": "jprall",
+          "body": "9 months later...  I just maxed out as well after only a few hours.  Its frustrating when limits are this tight when a lot of the work is fixing bugs the AI wrote.   Also, is there no way to purchase additional messages?  And for the record, I have done multi-day sessions with chatgpt, in one conversation, and I've never once had a limit imposed on me.",
+          "score": 2,
+          "created_utc": 1733254328.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": [
+            {
+              "id": "m5tw1oi",
+              "author": "FrankieNeil",
+              "body": "it is driving me crazy. It happens when I’m in a roll.  In that mult-day run with chatGPT that is awesome.  I have whatever the top of the line ChatGPT has.  And it has never stopped me. But I think my 60 year old memory, Banks, with a TBI and PTSD and  cognitive dysfunction I could do better with a set of encyclopedias then ChatGPT. Claud is awesome, but it keeps stopping me.",
+              "score": 1,
+              "created_utc": 1736228394.0,
+              "parent_id": "t1_m08xxqa",
+              "is_submitter": false,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "id": "m1h91mi",
+          "author": "JollyAthlete4923",
+          "body": "embarrassingly small message limits. paid version, hit the limit in under 5 minutes. absolutely NOT worth the money, pay the extra for GPT Pro, they don't throttle you.",
+          "score": 2,
+          "created_utc": 1733892402.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "m442el3",
+          "author": "TheMrJazzManWin10",
+          "body": "Same here, what can i do ?",
+          "score": 2,
+          "created_utc": 1735342860.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "ku61oh6",
+          "author": "Straight-Ebb-928",
+          "body": "happened to me today and I am beginning to have regrets upgrading to the Claude 3 Opus.\n\nWhat is the point having message limits on a paid subscription? Should have just stuck with the free version.",
+          "score": 1,
+          "created_utc": 1710039289.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": [
+            {
+              "id": "ku7ctyj",
+              "author": "Vowsss",
+              "body": "Yeah. I understand you on that. I think it's due to so much heavy usage because of the hype. It will probably be normal again when the hype goes down a bit",
+              "score": 2,
+              "created_utc": 1710067566.0,
+              "parent_id": "t1_ku61oh6",
+              "is_submitter": true,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "id": "kvmv4nt",
+          "author": "Dedinsidecorei420",
+          "body": "I've been using opus as soon as I was able to purchase the pro plan to access it, and it has been very impressive.  Although still not as smart as I think it could get in the future, for even hard topics like helping me with my discrete math class or writing code in various languages based off of my specifications, it still is capable of coming to a near correct result that only requires a few corrections. Also the ability for it to read files especially PDFs directly is extremely powerful. Even with the 10mb limit I can still split up a 77 pg paper from google scholar into a few different parts under 10mb to send to it in separate messages and it analyzes it extremely well and is able to apply the new knowledge to the conversation with minimal 'hallucinations' and is easily corrected with some careful prompting.  \n\nI've read that Claude Pro offers at least 5x more usage than the free service. you can expect to send at least 100 messages every 8 hours. etc.  Is there a more specific measure of the message limits, and will it be increased in the future? or maybe a higher category plan than the 'pro' plan to reduce limitation? I've read that the context window has been increased to 100K tokens, I assume that is where they get the '5x more usage' and '100 message every 8 hours' from. Is this accurate or is there a more specific limit floating around somewhere that isn't really talked about on the Anthropic support page?",
+          "score": 1,
+          "created_utc": 1710881349.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": [
+            {
+              "id": "kvmvvfz",
+              "author": "Vowsss",
+              "body": "Yeah it’s really good. Has potential to improve. So far I use it for writing code and it’s been good so far. I’ll probably try and use it to study for my upcoming finals. \n\nWell for the rate limits, I think it’s dependent on what messages you send. Messages that tend to use a longer period especially with documents tend to take more time since Claude had to re-read the entire document again. So depending on what message you send it can legit pull up the rate limit at any given time(from my experience due to instances where it generates long lines of code, which is far far better because I think it has a longer context window than GPT 3.5 and 4 from my experience)",
+              "score": 2,
+              "created_utc": 1710881596.0,
+              "parent_id": "t1_kvmv4nt",
+              "is_submitter": true,
+              "replies": [
+                {
+                  "id": "kvmxraj",
+                  "author": "Dedinsidecorei420",
+                  "body": "True, I've experienced the same thing where the rate limit just magically appears, With code, there's virtually no noticeable limitation. Especially when compared to GPT and other models I've found that I don't have to split up my code into segments for it to understand it and it can write a LOT more in one response.  Where I usually encounter the rate limit message is when I'm sending it large transcripts of audio from podcasts, lectures, videos, or other large pdfs and text files and asking it to process, summarize, or apply the information is various ways. It's still a guessing game tho and I hope they add a metric in the future that allows me to predict the limit farther in advance so I know how much usage I have left at all times.",
+                  "score": 1,
+                  "created_utc": 1710882223.0,
+                  "parent_id": "t1_kvmvvfz",
+                  "is_submitter": false,
+                  "replies": [
+                    {
+                      "id": "kvnhbv3",
+                      "author": "Vowsss",
+                      "body": "Yeah it would be nice. I have to plan out my message prompts just to get the most out of Claude and also increase productivity with the little messages I have left",
+                      "score": 1,
+                      "created_utc": 1710889030.0,
+                      "parent_id": "t1_kvmxraj",
+                      "is_submitter": true,
+                      "replies": [
+                        {
+                          "id": "kw7b5dw",
+                          "author": "hard2forget",
+                          "body": "Thanks for checking in on this post. I just signed up for pro and get 15 messages every 8 hours which is absolutely insane.\n\nReached out to support and there’s a 5 day wait time for responses.. \n\nI will have to reassess what I’m uploading now that I know it effects the overall available tokens.",
+                          "score": 1,
+                          "created_utc": 1711205543.0,
+                          "parent_id": "t1_kvnhbv3",
+                          "is_submitter": false,
+                          "replies": [
+                            {
+                              "id": "kw8lemy",
+                              "author": "Vowsss",
+                              "body": "To get the most of out opus, just try to put what you want to do (as in sequence) in one prompt.\n\nSince its context window is large, you can double up the amount of output with this. It pretty much helped me especially when it comes to generating long snippets of code.",
+                              "score": 1,
+                              "created_utc": 1711222513.0,
+                              "parent_id": "t1_kw7b5dw",
+                              "is_submitter": true,
+                              "replies": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kwuy34m",
+          "author": "Mourne84",
+          "body": "Alternatives without messages limits, yet?",
+          "score": 1,
+          "created_utc": 1711574026.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": [
+            {
+              "id": "kwyk57n",
+              "author": "Candid-Appearance738",
+              "body": "I just got hit with the limit.  Frustrating.  I'm on the Pro Plan and am working on a project.  Absolutely prefer Claude to other LLMs at this point and would be willing to pay by message to keep it running.  Don't think there's any other options...wait for reset or switch providers to continue working...Hopefully they offer a fix soon.",
+              "score": 1,
+              "created_utc": 1711636452.0,
+              "parent_id": "t1_kwuy34m",
+              "is_submitter": false,
+              "replies": [
+                {
+                  "id": "kx06udd",
+                  "author": "chikega",
+                  "body": "I have the pro plan as well and it just doesn't feel like 'pro'-level service.  Half the time, it's just too busy to responds or I get \"you've reached the limit for claude messages at this time. Please wait before trying again.\" only after about 30 questions when the cap is supposedly 1000/day?",
+                  "score": 1,
+                  "created_utc": 1711655972.0,
+                  "parent_id": "t1_kwyk57n",
+                  "is_submitter": false,
+                  "replies": [
+                    {
+                      "id": "ky7yz2u",
+                      "author": "Mourne84",
+                      "body": "Kk thx",
+                      "score": 1,
+                      "created_utc": 1712347074.0,
+                      "parent_id": "t1_kx06udd",
+                      "is_submitter": false,
+                      "replies": []
+                    }
+                  ]
+                },
+                {
+                  "id": "kx0oqdn",
+                  "author": "Enfiznar",
+                  "body": "Would you recommend it over chatGPT pro? My subscription just ended and I was thinking in switching to claude, but the rate limits are making me have second thoughts, since I usually upload full scripts",
+                  "score": 1,
+                  "created_utc": 1711661999.0,
+                  "parent_id": "t1_kwyk57n",
+                  "is_submitter": false,
+                  "replies": [
+                    {
+                      "id": "ky7zaz8",
+                      "author": "Mourne84",
+                      "body": "Have a look at huggingface, you can try all of them there, also if you have some horsepower you can download the model on your pc and use it there top. Immagine a palace like github but ai related.",
+                      "score": 1,
+                      "created_utc": 1712347184.0,
+                      "parent_id": "t1_kx0oqdn",
+                      "is_submitter": false,
+                      "replies": [
+                        {
+                          "id": "ky84imq",
+                          "author": "Enfiznar",
+                          "body": "My question is more focused on the message limit if the subscription. But you can't download Claude in HF, right? It's not open source afaik",
+                          "score": 1,
+                          "created_utc": 1712348974.0,
+                          "parent_id": "t1_ky7zaz8",
+                          "is_submitter": false,
+                          "replies": [
+                            {
+                              "id": "kyo5gds",
+                              "author": "Mourne84",
+                              "body": "Not sure",
+                              "score": 1,
+                              "created_utc": 1712608518.0,
+                              "parent_id": "t1_ky84imq",
+                              "is_submitter": false,
+                              "replies": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kyynnx7",
+          "author": "the_aj_system",
+          "body": "This message restriction is unacceptable for a paid plan. No more discussion to it.",
+          "score": 1,
+          "created_utc": 1712775561.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "l44vp0n",
+          "author": "cantthinkofausrnme",
+          "body": "Nope this is still broken just cancelled yesterday, it's crazy. I literally send 5 messages and was rate limited till 10pm at 5. I'm disappointed,  since I loved Claude so much, it's just not worth it anymore.",
+          "score": 1,
+          "created_utc": 1715767936.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "l6r5ew6",
+          "author": "fuschialantern",
+          "body": "It's crazy and I'm on the pro plan too.",
+          "score": 1,
+          "created_utc": 1717327994.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": [
+            {
+              "id": "nergaux",
+              "author": "CeeCee30N",
+              "body": "I’m on max \n\nLook at this\n\n\n\nError sending message\n\nYou've reached the limit\n\nfor Claude messages at\n\nthis time. Please wait\n\nbefore trying again.\n\n\n\nThis is pure sadness",
+              "score": 1,
+              "created_utc": 1758138453.0,
+              "parent_id": "t1_l6r5ew6",
+              "is_submitter": false,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "id": "l7o089v",
+          "author": "SeaYard9597",
+          "body": "Why is Opus limiting me. I'm paying to use it monthly.",
+          "score": 1,
+          "created_utc": 1717849157.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "lajtv5i",
+          "author": "Blade3d-ai",
+          "body": "I pay for a pro account, just hit limits in the middle of a project. Why the lack of transparency in Anthropic pay plans and structure? Telling me that a pro account gets 5x as many messages means nothing! And if Anthropic is going to follow the Uber and Wendy's model of surge pricing, then at least give us a progress bar while using Claude so we can see how our usage is progressing towards the limit. Finally, where is the documentation as to how we can be more efficient with our usage so as not to hit the limits? Maybe Anthropic can use their own AI to create a better user experience with better interface, more transparency, and better video support for new users!",
+          "score": 1,
+          "created_utc": 1719508668.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "lb1j106",
+          "author": "First-Ad-9463",
+          "body": "i just joined few days aago and its the same, anthropic  take the same amount as openai , and even as gut sonet is , u can work like 20 min a day , big waiting times up to 8 hours or more to become available , this is really not satisfying, consider lowering price or just pump your environment ,@Anthropic  \nits sad as sonnet is really smart , first test and i was like what was gpt - no idea , but that limitation sucks , pro doesnt feel like an upgrade at all ...",
+          "score": 1,
+          "created_utc": 1719785730.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "lcsn03t",
+          "author": "ataschz",
+          "body": "Same here.",
+          "score": 1,
+          "created_utc": 1720763762.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "ld4dft8",
+          "author": "B-Waves",
+          "body": "I encounter the same issue. Hitting the limit after 10 messages on a pay plan isn’t normal. Sonnet is great for sure but the paid plan is actually not aligned with the competition standards.",
+          "score": 1,
+          "created_utc": 1720953386.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "ldx59d8",
+          "author": "WhiteX-Design",
+          "body": "The rate limitation is quite annoying, indeed. Here's the official post about it, that might help to use your message quote wisely: [https://support.anthropic.com/en/articles/8324991-about-claude-pro-usage](https://support.anthropic.com/en/articles/8324991-about-claude-pro-usage)\n\nIf you're a programmer, you'll burn through your tokens fast if you attach your code...",
+          "score": 1,
+          "created_utc": 1721392460.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "lej6m50",
+          "author": "404eol",
+          "body": "I just got pro and i also got message limit very fast on the sun model. For me this is unusable and chatgpt pro have much higher limits... thats annoying",
+          "score": 1,
+          "created_utc": 1721737007.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "lfjwv74",
+          "author": "okanime",
+          "body": "I'm getting this limit on a new pro account. Has this been fixed yet?",
+          "score": 1,
+          "created_utc": 1722288624.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "lhiqjqf",
+          "author": "CynicalWilson13",
+          "body": "Yeah, I have to agree with the overall sentiment. Considering that claude's \"pro\" subscription is one of the more expensive options out there, the rate limits are brutal. On the other hand it's simply the best model for coding right now, so it's a rock and hard place sort of situation. Sure hope this'll change soon...",
+          "score": 1,
+          "created_utc": 1723337130.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "lid0ggg",
+          "author": "Beginning-Dog-5651",
+          "body": "I love claude, I really do, but I can't stop working/asking for help/taking advice from claude every so often, even though I pay the pro.",
+          "score": 1,
+          "created_utc": 1723785405.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "lihbr00",
+          "author": "Jazzlike-Flounder-33",
+          "body": "Por mi parte no creo renovar claude.ai. Porque sé. Supone que pagué para no tener límites y, aun así, terminando de obtener el plan pro no me dejó, sino mandar como 10 mensajes más.",
+          "score": 1,
+          "created_utc": 1723847997.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "lim3jol",
+          "author": "WardonGriffon",
+          "body": "About Claude Pro Usage  \nfrom [https://support.anthropic.com/en/articles/8324991-about-claude-pro-usage](https://support.anthropic.com/en/articles/8324991-about-claude-pro-usage) Aug 17 2024\n\n**Does Claude Pro have any usage limits?**\n\nYes. Claude Pro offers at least 5x the usage compared to our free service. The number of messages you can send will vary based on length of message, including the length of files you attach, and length of current conversation. We will provide a warning before you have 7 messages remaining, and your message limit will reset every 5 hours.\n\n![gif](giphy|rcOlpTCkM1GAE|downsized)\n\n**Practically what do these limits mean?**\n\nIf your conversations are relatively short (approximately 200 English sentences, assuming your sentences are around 15-20 words), you can expect to send around 45 messages every 5 hours, often more depending on Claude’s current capacity.\n\n\n\nYour limit gets used up faster with longer conversations, notably with large attachments. For example, if you upload a copy of The Great Gatsby, you may only be able to send 15 messages in that conversation within 5 hours, as each time you send a message, Claude “re-reads” the entire conversation, including any large attachments.\n\n\n\n**Why have these limits?**\n\nA model as capable as Claude takes a lot of powerful computers to run, especially when responding to large attachments and long conversations. We set these limits to ensure Claude can be made available to many people to try for free, while allowing power users to integrate Claude into their daily workflows.\n\n\n\nYour Claude Pro limits are based on the total length of your conversation, combined with the number of messages you send. Please note that these limits may vary depending on Claude’s current capacity.\n\n\n\n**In order to get the most value out of Claude Pro:**\n\n* **Start a new conversation** via the “AI” icon in the top left corner when you want to discuss a new topic. Claude needs to re-read the entire conversation every time you send a message, so starting a new conversation will limit the amount of work Claude needs to do to continue the conversation. Bonus: Claude will also respond faster to shorter conversations.\n* **Ask multiple questions at once**, especially if you are asking Claude questions about a long document. Because Claude needs to re-read the conversation each time you send a new message, asking questions in individual messages would use up your limit faster than a single message with multiple questions in it.\n* **Don’t re-upload files**. Claude sees the entire context from your conversation, so you don’t need to upload the same file multiple times (unless you start a new conversation).",
+          "score": 1,
+          "created_utc": 1723925236.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": [
+            {
+              "id": "lp20o8a",
+              "author": "sigma_4",
+              "body": "in short, GARBAGE SERVICE AND PLATFORM if they can't provide a decent SLA they shouln't sell anything",
+              "score": 1,
+              "created_utc": 1727373379.0,
+              "parent_id": "t1_lim3jol",
+              "is_submitter": false,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "id": "ljqpexv",
+          "author": "TunningCruger",
+          "body": "i just paid for Claude Pro and hit the message limit after using it for 30 minutes, is this a joke?",
+          "score": 1,
+          "created_utc": 1724524023.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "lk5jvgf",
+          "author": "iTh0R-y",
+          "body": "Can i simply post 50$ to not have any limits at all? Please please please?",
+          "score": 1,
+          "created_utc": 1724754837.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "lkdanut",
+          "author": "Master_Ad3331",
+          "body": "Claude gefällt mir aber diese limit geht mir auf den S.... Das ist tatsächlich ein Grund zum boykottieren und mich mit perplexity zu arangieren. Das sind Geschäftspraktiken wie bei Netzbetreiber vor 15 Jahren wo der Gesetzgeber dazwischen gehen musste.  \nImo beschäftige ich mich ca 2 mal im Monat intensiver am Wochenende mit AI und Programmierung. Nach zwei stunden mitten im Projekt ist Schluss. LIMIT erreicht! Von wegen Warnung, da geht nichts mehr außer durch die Historie zu scrollen. Dann habe ich nach zwei Wochen wieder zeit mich dem Projekt zu widmen. 2 stunden und dann wieder F... you",
+          "score": 1,
+          "created_utc": 1724864472.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "lks05xr",
+          "author": "65Bad",
+          "body": "Why am I paying and still getting rate limits????",
+          "score": 1,
+          "created_utc": 1725073185.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "ll7wnre",
+          "author": "Worldly_Assistant547",
+          "body": "I am on the Pro plan, and still hitting message limits. :(",
+          "score": 1,
+          "created_utc": 1725317379.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "lmgdv2c",
+          "author": "BZ_Devil",
+          "body": "Just bought a plan and can only ask 8 questions in 3 hours! like even a yes or no question? not even limited by token size.  :/ Ugh.\n\nProjects can't even accept a 20k line spreadsheet? I want to create tools to process files, but separating the logic and the NLP is hairy. Like we need better narrow AI tools based on context. Not childlike General AI, with a smaller token window.",
+          "score": 1,
+          "created_utc": 1725983493.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "lmlwdui",
+          "author": "nayeemuddin-bd100",
+          "body": "what the hell! switching pro plan , hit only 5 message , shown me limit full ! u/jasondclinton",
+          "score": 1,
+          "created_utc": 1726064405.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "lopffzy",
+          "author": "Formal-Difficulty321",
+          "body": "They must be getting more popular, tried twice the morning with two fairly routine queries separated by an hour and got diddly on both due to \"unexpected capacity constraints.\" Using Chat now instead. Might try Claude again next week.",
+          "score": 1,
+          "created_utc": 1727192558.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "lp1z1es",
+          "author": "sigma_4",
+          "body": "just canceled my subscription because of this problem garbage platform",
+          "score": 1,
+          "created_utc": 1727372875.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "lqckecs",
+          "author": "Hot_Rope4333",
+          "body": "I still get this limit while using the pro subscription from the android app.\nPlease fix it.",
+          "score": 1,
+          "created_utc": 1728070162.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "lqw8wtk",
+          "author": "SonicMuaytime",
+          "body": "dame all week and its october 2024.  :-(",
+          "score": 1,
+          "created_utc": 1728363415.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "lr9g7bt",
+          "author": "HeartFar6346",
+          "body": "ANY UPDATE ?",
+          "score": 1,
+          "created_utc": 1728573016.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": [
+            {
+              "id": "lrhqn8r",
+              "author": "pshoydar",
+              "body": "7 months and still happening. About to cancel, personally.",
+              "score": 1,
+              "created_utc": 1728690658.0,
+              "parent_id": "t1_lr9g7bt",
+              "is_submitter": false,
+              "replies": [
+                {
+                  "id": "ltt57z6",
+                  "author": "Responsible_Cow_3619",
+                  "body": "No. I met this stupid limit 30 mins ago. I have the pro plan as well and it just doesn't feel like 'pro'-level service.  Will cancel subscription.",
+                  "score": 1,
+                  "created_utc": 1729921736.0,
+                  "parent_id": "t1_lrhqn8r",
+                  "is_submitter": false,
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lud5rp6",
+          "author": "Crazy-Plan7678",
+          "body": "I'm getting capped on a pro account super quickly. And the time it tells me I can post again is not in my local time so I have no idea how long I need to wait. Super annoying.",
+          "score": 1,
+          "created_utc": 1730216787.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": [
+            {
+              "id": "lvip4gj",
+              "author": "MediumAuthor5646",
+              "body": "it's very annoying! we are paying for premium for nothing, all projects are incomplete! :D",
+              "score": 1,
+              "created_utc": 1730813607.0,
+              "parent_id": "t1_lud5rp6",
+              "is_submitter": false,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "id": "lv1mf91",
+          "author": "ALVAR036",
+          "body": "Same, kinda ridicilous how long the time limits are! at least give us the ability to pay more for unlimited use?",
+          "score": 1,
+          "created_utc": 1730567644.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "lvip9ni",
+          "author": "MediumAuthor5646",
+          "body": "few months later, still a thing! its getting annoying",
+          "score": 1,
+          "created_utc": 1730813659.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "lvsf6nc",
+          "author": "sassyhalforc",
+          "body": "is this still a thing cos I just got it?",
+          "score": 1,
+          "created_utc": 1730929245.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "lwb2o1t",
+          "author": "DeyanAse",
+          "body": "Cancelled my subscription. Same here.",
+          "score": 1,
+          "created_utc": 1731185882.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "lwlmqfw",
+          "author": "fenix692",
+          "body": "Claude has such potential but I paid for pro and feel scammed since limit gets hit in less than 30 minutes usage it seems. It isn’t a Pro level if can’t work with it reliably for even an hour.",
+          "score": 1,
+          "created_utc": 1731342442.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "lwom4j1",
+          "author": "SoggyKoolAid",
+          "body": "Claude SemiPro 🤣 No point in paying for something you can't use.. It's the best-in-class AI to stare at and wait for more usage credits.. 8 months have gone by since and it is still useless 🥲",
+          "score": 1,
+          "created_utc": 1731376879.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "lwpx0y4",
+          "author": "ron_carter228",
+          "body": "Having to constantly switch back to GTP Plus because of the limit on Claude Pro ! Very frustrating... wondering why am I paying for really...",
+          "score": 1,
+          "created_utc": 1731399299.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "lwwo0yf",
+          "author": "RespondRelevant6508",
+          "body": "Still the same issue...so many months",
+          "score": 1,
+          "created_utc": 1731501039.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "lxal3tx",
+          "author": "SpaceDigita",
+          "body": "I've got the same problem from a week or so now. I'm a pro user, but get about five prompts and than I get to free messages limit. And the connection is constantly dropping, so it sometimes after reconnecting runs the same prompt twice. Very annoying. I get more messages with the free ChatGPT version. Considering we're paying for it... Not nice ",
+          "score": 1,
+          "created_utc": 1731690977.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "lxdsdgv",
+          "author": "Practical-Test-2897",
+          "body": "not even 30 minutes, i get this message: Message limit reached for Claude 3.5 Sonnet until 4 PM. frustrating!",
+          "score": 1,
+          "created_utc": 1731730102.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "lxdsfh1",
+          "author": "Practical-Test-2897",
+          "body": "am a Pro paid user",
+          "score": 1,
+          "created_utc": 1731730127.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "lxdszba",
+          "author": "Practical-Test-2897",
+          "body": "i am also paid chatgpt user and it has never cut me off with this kind of message: \"Message limit reached for Claude 3.5 Sonnet until 4 PM.\" i think claude 3.5 sonnet has a problem. hope they fix the problem quickly!",
+          "score": 1,
+          "created_utc": 1731730372.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "lylji8e",
+          "author": "SuitableAsk8263",
+          "body": "De acuerdo, es frustrante pagar 20 dólares y tener que parar después de media hora y espera tanto.",
+          "score": 1,
+          "created_utc": 1732379495.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "lyxywmn",
+          "author": "boozer87",
+          "body": "We have usage limits in place for Claude Pro to ensure fair access and manage our computing resources effectively. While there are limits, Claude Pro offers at least 5x more usage compared to our free service. With Claude Pro, you can typically send around 45 messages every 5 hours for shorter conversations, often more depending on message length and our current capacity. These limits help us maintain a balance between providing a powerful AI service and ensuring it's available to many users while allowing for more intensive use by subscribers. - It's a Joke!",
+          "score": 1,
+          "created_utc": 1732558803.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "lz35dh6",
+          "author": "Own_Lion_5342",
+          "body": "La verdad creo que jason Clinton miente, porque en la documentacion de antropic está claro que sin importar que pagues los 20 dolares vas a tener las restricciones de chat, y te bloquean 5 horas cada que alcances el limite. Hay que pensar si vale la pena pagar en antropit.",
+          "score": 1,
+          "created_utc": 1732635059.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "m0eq2h8",
+          "author": "josejrojasr77",
+          "body": "Tengo el servicio Claude pro y luego de algunas actualizaciones me bloquea por 3 o 4 horas, esto es normal? O cuál es la ventaja de tener la versión pro?",
+          "score": 1,
+          "created_utc": 1733337388.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "m2162g4",
+          "author": "PlatypusLonely5282",
+          "body": "Das passiert mir auch ständig. Obwohl ich die Pro version habe sagt er mir ständig nur 5 Dokumente",
+          "score": 1,
+          "created_utc": 1734192908.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "m2azlmn",
+          "author": "SnooSongs4304",
+          "body": "the same here, get that error too often, even afer only few minuts ...",
+          "score": 1,
+          "created_utc": 1734340145.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "m2ba5w7",
+          "author": "YT-CS-GO",
+          "body": "Wenn ich das hier alles lese, fällt mir erneut auf (und das ist auch meine eigene Erfahrung): Es hat sich überhaupt nichts geändert. Den Pro-Plan habe ich seit Beginn, sobald er verfügbar war. Dennoch erhalte ich maximal fünf wirklich gute Antworten – der Rest wird durch limit blockiert, öffnet man dann aber wieder genau das selbe Gespräch 5h später leidet das projekt erheblich davon und man verschwendet sein limit.\n\nEcht Asozial so werden wir hart beschränkt, Claude ist sehr gut aber mit den Einschränkungen in der Pro Version nicht zu gebrachen !\n\n  \nWerde mit Sicherheit nächsten Monat nichts mehr dafür zahlen! Ich denke sogar das ich mehr Geld dafür ausgeben habe als hätte ich einfach die api, Console nach bedarf benutzt.\n\n  \nDummdumm oder verarsche ?",
+          "score": 1,
+          "created_utc": 1734347337.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "m3iq39s",
+          "author": "Cool_Combination_155",
+          "body": "I don't mind message limits when my use reaches those limits. However Anthropic provides no guidance as to how close you are to a limit.  \nI used Claude over 12 hours ago (last night), I can't do anything as I have already reached today's limit. Limit of zero that is. I'm a pro ex-user",
+          "score": 1,
+          "created_utc": 1734999791.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "m3isylx",
+          "author": "Cool_Combination_155",
+          "body": "I have found one reason for my message limit issues. I use the desktop version. It's not smart enough to update itself with the passage of time after the message limit is reached.\n\nIn TaskManager, I found about a dozen processes. I killed them all then restarted Claude and was able to continue.\n\nStill not much intelligence going into the use of Claude. Should ask it to re-write itself. Only needs one message",
+          "score": 1,
+          "created_utc": 1735000875.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": [
+            {
+              "id": "nxo2qiu",
+              "author": "pds6502",
+              "body": "Very good insight. I, too, experience the desktop application, at least the Windows version of it, to be complete garbage. It's buggy and probably has enormous memory leaks. The browser version, Edge/Safari/Firefox/etc work so much better. Even better occasionally closing and restarting not only Claude's brower tab but the entire browser itself. Pro tip: DO NOT use multiple tabs, with Claude use only one.",
+              "score": 1,
+              "created_utc": 1767551420.0,
+              "parent_id": "t1_m3isylx",
+              "is_submitter": false,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "id": "m4r09p2",
+          "author": "CuriousCannuck",
+          "body": "I get this all the time. I really want to switch to Claude as my go to, but these message limits and upload limits are killing me. I'd easily pay 15% more just to not have limits, and ditch ChatGPT",
+          "score": 1,
+          "created_utc": 1735678243.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "m4zrd58",
+          "author": "ShakeLeading4619",
+          "body": "Hi- I have paid for Claude for several months now. I keep getting a mesage limit. Whats going on? Does anyone know where I can send an email or where there is a chat?",
+          "score": 1,
+          "created_utc": 1735816374.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": [
+            {
+              "id": "m5tvg7f",
+              "author": "FrankieNeil",
+              "body": "it has been happening to me too, and I’ve been on pro for a few months now. And this happened ever since I’ve been on it and usually right when I’m in a flow.",
+              "score": 1,
+              "created_utc": 1736228106.0,
+              "parent_id": "t1_m4zrd58",
+              "is_submitter": false,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "id": "m5tv8f6",
+          "author": "FrankieNeil",
+          "body": "Me too",
+          "score": 1,
+          "created_utc": 1736228002.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "m6bjx24",
+          "author": "AdSpirited9702",
+          "body": "Still reproducible on my side too. It's getting boring and also I feel I spend 20$ on a thing where I can't send more than 20 messages.",
+          "score": 1,
+          "created_utc": 1736469070.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "m73s60a",
+          "author": "YahyaIsGood",
+          "body": "I just stopped using Claude. for this reason.",
+          "score": 1,
+          "created_utc": 1736866363.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "m8k73mq",
+          "author": "AdCritical4840",
+          "body": "I wish I would’ve known Claude was going to do this to me as well before I signed up for it $20 a month canceling immediately sitting there working on something and I reached my limit within 30 minutes!!",
+          "score": 1,
+          "created_utc": 1737563773.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": [
+            {
+              "id": "m9cafxr",
+              "author": "Western-Hospital-793",
+              "body": "Olá, amigo, realmente o Claude me surpreendeu pela forma como entrega as buscas no prompt, estou realizando projetos web do zero e de fato não existe comparação para CHATGPT, o Claude é melhor, Mas, essa limitação é ridícula, pago o PRO, mês a mês e passando raiva não deixo de usuá-lo, fico imaginando se fosse ilimitado plano Pro, nossa a rapidez para finalizar trabalhas seria surpreendente, poderiam até aumentar o valor mensal, não me importaria, mas liberem isso por favor! ou no minimo aumentem o tempo invertam ao invez de esperar 5 horas, deixem usar por 5 horas, ou 8 horas, venceu, só no outro dia!",
+              "score": 1,
+              "created_utc": 1737928335.0,
+              "parent_id": "t1_m8k73mq",
+              "is_submitter": false,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "id": "maxkq79",
+          "author": "StandardBrief6017",
+          "body": "Faites vite  car beaucoup de forfaits vont être arrêter C est frustrant de payer et d avoir des limitations au bout de qqs échanges ",
+          "score": 1,
+          "created_utc": 1738681813.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "mb3pbjv",
+          "author": "nardog03",
+          "body": "Claude is doing for more like why you are still limiting pro users rates to Sonnet 3.5 and such a long time before you get to use it again. Like what is your plans to address this and change these issues?",
+          "score": 1,
+          "created_utc": 1738762508.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "mirb64g",
+          "author": "Investigative-Mind77",
+          "body": "I have Pro too, and after only 4 responses from Opus, I have 1 message to go? The responses aren't even long. Yes, I am speaking to Opus within a Project, but it's a new conversation, and project space is only half full. This is extreme. I don't think I will using Opus for anything, not if this is what is expected.",
+          "score": 1,
+          "created_utc": 1742454486.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "ml1gn5c",
+          "author": "Covariante87",
+          "body": "Y entonces?",
+          "score": 1,
+          "created_utc": 1743608786.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "mrk55it",
+          "author": "ap15945",
+          "body": "This conversation is one year old. Yet, in 2025 we have the same issues. I hit the limit with Claude free version and it suggested me to upgrade. I did it because I need to work on some files right now and with my surprise, I cannot prompt any message ! Basically I stil have to wait  for 5 hours or so. I think this is misleading. They should say clearly that the pro version has the same time limits of the free version, the only difference being the possibility to use Haiku or Opus instead of Sonnet, for this reason I will delete my subscription.",
+          "score": 1,
+          "created_utc": 1746866318.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "muoytvm",
+          "author": "Cryptocoinwin",
+          "body": "Juste une honte, j'ai pris la version pro et c'est pareil, de plus ça doit se remettre à jour au bout de 5h et j'en suis presque à 24h! Leur support est inexistant juste une ia à qui on ne peux poser qu'une seule question et support humain, ben il y en a pas!!! Passez votre chemin car vu les erreurs que claude fait votre limite sera vite dépasser alors que vous n'aurez pas avancé dans votre projet !!!",
+          "score": 1,
+          "created_utc": 1748437571.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "mvkvqje",
+          "author": "Huge_Dance_9181",
+          "body": "I also am a pro user and getting message limits.  Even on first question in a philosophical discussion.   It thinks then starts to answer sometimes, times out, and says- limit reached",
+          "score": 1,
+          "created_utc": 1748868455.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "my5tjuv",
+          "author": "sandymal",
+          "body": "I purchased a 1-month subscription with Claude, but the message limit is frustrating. I also have a GPT subscription, and while I like Claude in more aspects, I will not renew it because it runs out so quickly!!!",
+          "score": 1,
+          "created_utc": 1750112387.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "mzacqeu",
+          "author": "MissionEnthusiasm746",
+          "body": "Just joined - been enjoying Claude after a horrible ChatGPT experience. Have 4.0 and paid for Pro. First glitch and bad experience happened Wednesday 6/18 - kept getting interrupted and weird responses. After that the limit in chat time both voice walkie-talkie and text is so short. Then I have to wait hours interrupting my projects and productivity. Paying more is not in my budget. What is going on?",
+          "score": 1,
+          "created_utc": 1750660599.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "n0e0zpe",
+          "author": "Ok_Wolverine2718",
+          "body": "Ich bin neu dabei. Direkt die Pro ausprobiert. Das war dann leider auch schon der letzte Monat. Alles sehr intransparent. 5-25 mal mehr Nutzung in Max? Ich habe gar keine Lust \"Max\" zu testen, wenn derart verschlossen gegenüber Nutzerlimits kommuniziert werden. \"Pro\" jedenfalls ist nicht nutzbar. Die Limits sind Frech teilweiße.",
+          "score": 1,
+          "created_utc": 1751194943.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "n42uzja",
+          "author": "No_Advantage_9457",
+          "body": "I just got pro and same at limit almost immediately",
+          "score": 1,
+          "created_utc": 1752968031.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "n6oojoc",
+          "author": "Emergency-Collar8702",
+          "body": "I see these post are 1 year ago I’m experiencing the very same issues does the Opus model allow more questions",
+          "score": 1,
+          "created_utc": 1754224698.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": [
+            {
+              "id": "na4rkqz",
+              "author": "Old_Warthog7895",
+              "body": "nope, it blocks you from using all models once you hit your 10 prompt limit",
+              "score": 1,
+              "created_utc": 1755892937.0,
+              "parent_id": "t1_n6oojoc",
+              "is_submitter": false,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "id": "n8r1qht",
+          "author": "Financial_Total5493",
+          "body": "Definitivamente, es extraño que limiten las interacciones aunque tengo el plan mensual. Estoy pensando en salirme del plan. Es paga para un servicio y no lo cumplen.",
+          "score": 1,
+          "created_utc": 1755218454.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "na4qtzw",
+          "author": "Old_Warthog7895",
+          "body": "Fastest unsubscribe I've ever done. Bought pro, sent maybe 10 prompts, got message limited. Crap service, crap company.",
+          "score": 1,
+          "created_utc": 1755892713.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "nbaqpg2",
+          "author": "Immediate_Suit125",
+          "body": "pareil ici... 3 messages et soit disant limite de 5 heures atteinte! avec abonnement pro! c'est quoi ce bordel?",
+          "score": 1,
+          "created_utc": 1756467141.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "nbdj5b4",
+          "author": "karlphillip",
+          "body": "Fast-forward to Aug 2025, the issue remains strong with Claude Opus 4: I just upgraded to the *Pro plan* and after \\~10 messages I hit the \"5-hour limit reached\". Yes, I attached a few text files along with the messages but this limit is still ridiculous.\n\nClaude barely started to understand the context and scope of the problem to propose a valid solution to a scenario related to PowerShell scripts and CMake files.\n\nI had to wait another 5-hours to be able to continue the conversation with Claude and then another 10 messages later, it still wasn't enough for it to propose a valid solution.\n\nSo here I am, already lost 10 hours waiting to use the service and it made no real progress so far.   \n  \nMeanwhile, a bunch of non-tech savvy CEOs in Tech companies are firing SW engineers because they believe AI is ready to replace engineers... geniuses!",
+          "score": 1,
+          "created_utc": 1756497766.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": [
+            {
+              "id": "nbdmrsk",
+              "author": "karlphillip",
+              "body": "In short, even though other AIs might not be as great for coding purposes, you still get a lot more done with them than Claude. There is no competition here: ChapGPT 5 is decent enough for coding problems and won't block your investigations so you end up getting a lot of stuff done in 10 hours of non-stop conversations with ChatGPT than you can with Claude. The game is over, I'm unsubscribing Claude.",
+              "score": 1,
+              "created_utc": 1756498864.0,
+              "parent_id": "t1_nbdj5b4",
+              "is_submitter": false,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "id": "nbtkfga",
+          "author": "niesvaara",
+          "body": "Yo también he pagado ChatGpt y Claude a la vez para revisar un proyecto en que estaba trabajando y me ha asombrado la rapidez, 20 minutos después de estar analizando con Claude sin grandes extensiones de escritura ya tenía límite, ya tenía que parar de usarlo, mientras que el mismo trabajo, me atrevería a decir que haciendo el triple en ChatGpt con el mismo tema aún puedo seguirlo usando con la versión de pago básica en los 2, me ha parecido sorprendente, no he podido ni llegar a comparar un resultado final entre ambas plataformas ya que Claude ni ha llegado a poder estar al 15% el mismo proyecto, mientras que con GPt no solo he podido acabarlo si no que lo sigo corrigiendo y cambiando cosas mientras en otra ventana de GPT a la vez estoy trabajando otros puntos fuera de este proyecto.",
+          "score": 1,
+          "created_utc": 1756726722.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "ncriq8z",
+          "author": "Mortgage-Hour",
+          "body": "I paid for it and after a few messages, I'm limited to a few hours! It's a joke. Claude is good, but seriously, this is overkill.",
+          "score": 1,
+          "created_utc": 1757179896.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "ne48efb",
+          "author": "Individual_Broccoli8",
+          "body": "I just paid for a one-year subscription, uploaded a few files, and asked a few questions. First of all, the responses didn't fix my problem, so I would need to work on it a lot more, but I hit my limit, and I have to wait five hours and literally five minutes. This is ridiculous!",
+          "score": 1,
+          "created_utc": 1757825973.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "nec9tqd",
+          "author": "No_Development7041",
+          "body": "I just strated an hour ago and subscribed on friday, but I get the same limittation message as in the free version which is furstrating because i really need to get some work done, why is this happening and how do I fix it?",
+          "score": 1,
+          "created_utc": 1757941967.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "neqduq7",
+          "author": "CeeCee30N",
+          "body": "Bruh they doing this to me with the hundred dollar plan i hate claude man they are committing Fraud  ",
+          "score": 1,
+          "created_utc": 1758127523.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "nirgx3j",
+          "author": "jaynola40",
+          "body": "I woke up and sent one message this morning and last use was more than 8 hours ago and it tells me I reached my limit and I have a pro. This is some BS.",
+          "score": 1,
+          "created_utc": 1760099773.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "nnlo907",
+          "author": "BlacksmithOld3049",
+          "body": "Ich habe genau das selbe Problem. Fee Version genutzt, war nach 5 Fragen / Antworten Ende. Dann Pro gekauft und weitere 5 Antworten, wieder Ende. Danke für nichts! Habe Claude gekündigt und werde nur noch mit Gemini oder ChatGPT arbeiten, da habe ich das Problem noch nie gehabt und ehrlich gesagt, Claude ist nicht mehr so gut wie er mal war, die anderen können jetzt auch mithalten. Das Ist nur noch Arrogant und selbst zerstörend, was Anthropic da macht. Mich haben sie als Kunden jedenfalls verloren. Gibt genug alternativen, die mittlerweile nicht nur mithalten können, sondern sogar besser sind und immer besser werden. Schade, mochte Claude.",
+          "score": 1,
+          "created_utc": 1762526072.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "nogalbb",
+          "author": "ChemicalDetective419",
+          "body": "Cloud Anthropic is a complete disappointment. I bought the Pro plan, but it’s impossible to work with — I constantly have to wait 2–4 hours for the limit to reset. I’ll never buy this fake product again.",
+          "score": 1,
+          "created_utc": 1762954120.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        },
+        {
+          "id": "nrbss2a",
+          "author": "majedabidi0",
+          "body": "Q",
+          "score": 1,
+          "created_utc": 1764388531.0,
+          "parent_id": "t3_1b8pidy",
+          "is_submitter": false,
+          "replies": []
+        }
+      ]
+    }
+  ]
+}

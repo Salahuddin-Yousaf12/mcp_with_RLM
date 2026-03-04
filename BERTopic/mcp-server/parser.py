@@ -21,28 +21,53 @@ class ParsedCall:
     kwargs: dict      # keyword args  (Python values)
 
 
-# Matches:  some_function_name(   ...anything...   )
-_CALL_RE = re.compile(r"([a-zA-Z_]\w*)\s*\(([^)]*)\)")
+_FUNC_START_RE = re.compile(r"([a-zA-Z_]\w*)\s*\(")
+
+
+def _extract_args_string(raw: str, open_paren_pos: int) -> str | None:
+    depth = 1
+    in_single = False
+    in_double = False
+    i = open_paren_pos + 1
+    while i < len(raw):
+        ch = raw[i]
+        prev_escape = (i > 0 and raw[i - 1] == "\\")
+        if ch == "'" and not in_double and not prev_escape:
+            in_single = not in_single
+        elif ch == '"' and not in_single and not prev_escape:
+            in_double = not in_double
+        elif not in_single and not in_double:
+            if ch == "(":
+                depth += 1
+            elif ch == ")":
+                depth -= 1
+                if depth == 0:
+                    return raw[open_paren_pos + 1 : i]
+        i += 1
+    return None
 
 
 def parse_llm_response(raw: str) -> ParsedCall | None:
     """
     Try to extract a function call from the LLM's raw output.
     Returns None if nothing parseable is found, or the string is 'NO_MATCH'.
+    Uses paren-balancing so args containing ')' are handled correctly.
     """
     raw = raw.strip()
 
     if raw.upper() == "NO_MATCH" or not raw:
         return None
 
-    match = _CALL_RE.search(raw)
+    match = _FUNC_START_RE.search(raw)
     if not match:
         return None
 
-    func_name   = match.group(1)
-    args_string = match.group(2).strip()
+    func_name = match.group(1)
+    args_string = _extract_args_string(raw, match.end() - 1)
+    if args_string is None:
+        return None
 
-    args, kwargs = _parse_arguments(args_string)
+    args, kwargs = _parse_arguments(args_string.strip())
     return ParsedCall(func_name=func_name, args=args, kwargs=kwargs)
 
 

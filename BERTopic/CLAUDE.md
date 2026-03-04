@@ -104,6 +104,11 @@ Type 'exit' to quit
 | `OLLAMA_MODEL` | `ollama_client.py` | `llama3.2` |
 | `REDDIT_SCRAPER_URL` | `function_registry.py` | `http://localhost:8000` |
 
+## Agent Usage
+
+For AI-based tasks (LLM integration, model serving, inference pipelines) use the `ai-engineer` agent.
+For Data Science tasks (analysis, modeling, statistical work, ML pipelines) use the `data-scientist` agent.
+
 ## Output Format (temp.json)
 
 ```json

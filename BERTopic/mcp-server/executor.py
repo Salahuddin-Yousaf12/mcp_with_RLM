@@ -43,12 +43,12 @@ def execute(parsed_call: ParsedCall) -> dict:
     
     # If this was a Reddit scraper call, extract comments to temp.json
     if spec.name in ("search_reddit", "google_search_reddit"):
-        result = _process_reddit_result(result)
+        result = process_reddit_result(result)
     
     return result
 
 
-def _process_reddit_result(result: dict) -> dict:
+def process_reddit_result(result: dict) -> dict:
     """After Reddit scrape, extract title + comments to temp.json."""
     body = result.get("body", {})
     

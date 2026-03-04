@@ -996,9 +996,9 @@ header h1 {
     display: flex;
     flex-direction: column;
     gap: 14px;
-    max-height: 500px;
-    overflow-y: auto;
-    padding-right: 8px;
+    overflow-x: auto;
+    overflow-y: visible;
+    padding-bottom: 8px;
 }
 
 .comments-empty {
@@ -1021,6 +1021,9 @@ header h1 {
     padding: 16px 18px;
     border-left: 4px solid var(--border);
     transition: all 0.3s ease;
+    min-width: 0;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
 }
 
 .comment:hover {
@@ -1029,18 +1032,38 @@ header h1 {
 }
 
 .comment-depth-1 {
-    margin-left: 24px;
+    margin-left: 16px;
     border-left-color: var(--accent);
 }
 
 .comment-depth-2 {
-    margin-left: 48px;
+    margin-left: 32px;
     border-left-color: var(--link);
 }
 
 .comment-depth-3 {
-    margin-left: 72px;
+    margin-left: 48px;
     border-left-color: var(--highlight);
+}
+
+.comment-depth-4 {
+    margin-left: 64px;
+}
+
+.comment-depth-5 {
+    margin-left: 80px;
+}
+
+.comment-depth-6 {
+    margin-left: 96px;
+}
+
+.comment-depth-7 {
+    margin-left: 112px;
+}
+
+.comment-depth-8 {
+    margin-left: 128px;
 }
 
 .comment-header {
@@ -1083,6 +1106,7 @@ header h1 {
     color: var(--text-secondary);
     white-space: pre-wrap;
     word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .comment-replies {
@@ -1090,6 +1114,7 @@ header h1 {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    /* Allow horizontal scroll for deeply nested comments */
 }
 
 /* Loading State */

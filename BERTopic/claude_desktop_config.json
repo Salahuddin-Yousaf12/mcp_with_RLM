@@ -1,0 +1,9 @@
+{
+  "_readme": "Copy the mcpServers block into your Claude Desktop config. Windows: %APPDATA%\\Claude\\claude_desktop_config.json | macOS: ~/Library/Application Support/Claude/claude_desktop_config.json",
+  "mcpServers": {
+    "reddit-scraper": {
+      "command": "python",
+      "args": ["C:\\Users\\salah\\Desktop\\mcp\\BERTopic\\mcp-server\\mcp_server.py"]
+    }
+  }
+}

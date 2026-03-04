@@ -608,7 +608,7 @@ function renderComments(comments, depth) {
     return comments.map(comment => {
         const hasReplies = comment.replies && comment.replies.length > 0;
         const isOp = comment.is_submitter;
-        const depthClass = depth > 0 ? `comment-depth-${Math.min(depth, 3)}` : '';
+        const depthClass = depth > 0 ? `comment-depth-${Math.min(depth, 8)}` : '';
         const opBadge = isOp ? '<span class="op-badge">OP</span>' : '';
         
         return `

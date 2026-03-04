@@ -11,10 +11,22 @@ Alternative: Use Reddit's JSON API directly for search.
 import time
 import logging
 import re
+import socket as _socket
 import urllib.parse
 from typing import Optional, List
 
 import httpx
+
+# Force IPv4 — Docker containers typically lack IPv6 routing.
+# Without this, httpx tries the IPv6 address first and gets ENETUNREACH.
+_orig_getaddrinfo = _socket.getaddrinfo
+
+def _ipv4_first_getaddrinfo(host, port, family=0, type=0, proto=0, flags=0):
+    results = _orig_getaddrinfo(host, port, family, type, proto, flags)
+    ipv4 = [r for r in results if r[0] == _socket.AF_INET]
+    return ipv4 if ipv4 else results
+
+_socket.getaddrinfo = _ipv4_first_getaddrinfo
 
 from app.models import Post, Comment
 
@@ -432,15 +444,65 @@ def scrape_single_post(reddit_url: str) -> Optional[Post]:
         return None
 
 
+def search_bing_for_reddit(query: str) -> Optional[str]:
+    """
+    Fallback: Search Bing for Reddit links.
+    """
+    search_query = f"{query} site:reddit.com"
+    encoded_query = urllib.parse.quote(search_query)
+    bing_url = f"https://www.bing.com/search?q={encoded_query}&count=20"
+
+    logger.info("🔍 Searching Bing: %s", bing_url)
+
+    try:
+        html = get_html(bing_url)
+
+        patterns = [
+            r'href=["\']?(https?://(?:www\.)?reddit\.com/[^"\'\s>]+)["\']?',
+            r'https?://(?:www\.)?reddit\.com/[^\s"\'<>]+',
+        ]
+
+        for pattern in patterns:
+            for match in re.finditer(pattern, html):
+                url = urllib.parse.unquote(match.group(1) if match.lastindex else match.group(0))
+                url = url.split('&')[0].rstrip('.,;:!?)')
+                if 'reddit.com' in url and len(url) > 30:
+                    logger.info("✅ Found Reddit URL via Bing: %s", url)
+                    return url
+    except Exception as e:
+        logger.warning("Bing search failed: %s", e)
+
+    return None
+
+
+def search_reddit_api(query: str) -> Optional[str]:
+    """
+    Final fallback: use Reddit's own search JSON API to find the top post.
+    Most reliable — no search engine scraping needed.
+    """
+    url = f"{REDDIT_BASE}/search.json?q={urllib.parse.quote(query)}&sort=relevance&limit=5&type=link"
+    logger.info("🔍 Searching Reddit API: %s", url)
+    try:
+        data = get_json(url)
+        children = data.get("data", {}).get("children", [])
+        for child in children:
+            permalink = child.get("data", {}).get("permalink", "")
+            if permalink:
+                full_url = f"{REDDIT_BASE}{permalink}"
+                logger.info("✅ Found Reddit URL via Reddit API: %s", full_url)
+                return full_url
+    except Exception as e:
+        logger.warning("Reddit API search failed: %s", e)
+    return None
+
+
 def scrape_via_google(query: str) -> List[Post]:
     """
-    Search Google for the query, find the first Reddit link, and scrape it.
-    
-    Falls back to DuckDuckGo if Google doesn't find anything.
-    
+    Search Google → DuckDuckGo → Bing → Reddit API for a Reddit post, then scrape it.
+
     Args:
         query: Search query (e.g., "best python tutorials")
-    
+
     Returns:
         List containing the scraped post (or empty list if failed).
     """
@@ -448,23 +510,26 @@ def scrape_via_google(query: str) -> List[Post]:
     logger.info("🔍 SEARCH ENGINE → REDDIT SCRAPER")
     logger.info("=" * 70)
     logger.info("Query: %s", query)
-    
-    # Step 1: Try Google first
+
+    # Try search engines in order until one finds a Reddit URL
     reddit_url = search_google_for_reddit(query)
-    
-    # Step 2: If Google fails, try DuckDuckGo
+
     if not reddit_url:
-        logger.info("⚠️ Google didn't find Reddit URL, trying DuckDuckGo...")
+        logger.info("⚠️ Google failed, trying DuckDuckGo...")
         reddit_url = search_duckduckgo_for_reddit(query)
-    
+
+    if not reddit_url:
+        logger.info("⚠️ DuckDuckGo failed, trying Bing...")
+        reddit_url = search_bing_for_reddit(query)
+
+    if not reddit_url:
+        logger.info("⚠️ All search engines failed, falling back to Reddit API...")
+        reddit_url = search_reddit_api(query)
+
     if not reddit_url:
         logger.warning("❌ No Reddit URL found for query: %s", query)
         return []
-    
-    # Step 3: Scrape the Reddit post
+
+    # Scrape the Reddit post
     post = scrape_single_post(reddit_url)
-    
-    if post:
-        return [post]
-    
-    return []
+    return [post] if post else []
