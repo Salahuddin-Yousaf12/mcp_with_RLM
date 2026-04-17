@@ -16,8 +16,8 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).parent
-MCP_SERVER = ROOT / "mcp-server" / "mcp_server.py"
-REQUIREMENTS = ROOT / "mcp-server" / "requirements.txt"
+MCP_SERVER = ROOT / "orchestrator" / "mcp_server.py"
+REQUIREMENTS = ROOT / "orchestrator" / "requirements.txt"
 
 CLAUDE_CONFIG = (
     Path.home() / "AppData" / "Roaming" / "Claude" / "claude_desktop_config.json"
@@ -65,4 +65,4 @@ if __name__ == "__main__":
     install_deps()
     patch_claude_config()
     print("\nAll done. Start the Reddit scraper with:")
-    print("  cd reddit-scraper && docker-compose up -d")
+    print("  docker-compose up -d")

@@ -11,7 +11,7 @@ services:
 
   # ── 1. Reddit Scraper ──────────────────────────────────────────────────────
   reddit-scraper:
-    build: ./reddit-scraper
+    build: ./services/scraper
     container_name: reddit-scraper
     ports:
       - "8001:8000"
@@ -35,17 +35,19 @@ services:
   # ── 2. RLM Service ─────────────────────────────────────────────────────────
   rlm-service:
     build:
-      context: ../RLM        # one level up from BERTopic/
+      context: ./RLM
       dockerfile: Dockerfile
     container_name: rlm-service
     ports:
       - "8002:8002"
     environment:
-      # Provider: 'tools' uses Ollama-native tool calling; 'repl' uses vLLM code execution
       - RLM_MODE=tools
       - ROOT_PROVIDER=ollama
       - ROOT_BASE_URL=https://ollama-ijcare-gpt.sheikhibrar.com
       - ROOT_MODEL=llama3.1:8b
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
     restart: unless-stopped
     healthcheck:
       test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8002/health')"]
@@ -58,7 +60,7 @@ services:
 
   # ── 3. MCP Orchestrator Service ────────────────────────────────────────────
   mcp-service:
-    build: ./mcp-server
+    build: ./orchestrator
     container_name: mcp-service
     ports:
       - "8003:8003"

@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(docker exec:*)",
+      "Bash(docker-compose up:*)",
+      "WebFetch(domain:)",
+      "WebFetch(domain:example.com)",
+      "Bash(git mv:*)",
+      "Bash(git rm:*)",
+      "Bash(mkdir -p .claude/agents)",
+      "Bash(cp BERTopic/.claude/agents/*.md .claude/agents/)",
+      "Bash(cp BERTopic/.claude/settings.local.json .claude/settings.local.json)",
+      "Bash(rm -rf BERTopic/.claude)",
+      "Bash(python -c \"from rlm.functions import registry; print\\('Registered functions:', registry.list_names\\(\\)\\); print\\(\\); print\\(registry.get_descriptions\\(\\)\\)\")",
+      "Bash(python:*)"
+    ]
+  }
+}
