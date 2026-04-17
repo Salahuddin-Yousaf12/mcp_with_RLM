@@ -1,0 +1,146 @@
+A decoder-only transformer begins with a deceptively simple premise: given a sequence of tokens, predict the next one. There is no explicit understanding, no awareness, no goals. There is only conditional probability applied repeatedly, step after step, in a vast and carefully structured mathematical machine. Everything that looks intelligent emerges from this single recursive act: given what has already been seen, what comes next?
+
+At the very beginning, before any computation occurs, raw human language must be converted into something the model can process. Text is not fed directly into the transformer. Instead, it is broken down into tokens, discrete units that may represent words, word fragments, punctuation, or even single characters depending on the tokenizer. This process is lossy in a semantic sense but efficient computationally. Meaning is not preserved explicitly; only consistent representation is. The tokenizer establishes the vocabulary, the finite universe of symbols the model will ever know.
+
+Each token is then mapped to an integer index. This index has no meaning on its own. Token ID 42 is not closer to token ID 43 than it is to token ID 9000 in any conceptual sense. To give tokens a usable structure, they are passed through an embedding layer. This layer converts each discrete token ID into a dense vector of real numbers, often hundreds or thousands of dimensions wide. These embeddings are learned parameters. Over training, tokens that appear in similar contexts develop embeddings that are closer together in vector space, but this is an emergent property, not an explicit rule.
+
+At this stage, the model has token embeddings but no notion of order. A transformer, by default, does not know whether a token came first or last. This is a critical limitation because language is inherently sequential. To address this, positional information is injected into the embeddings. In a basic decoder-only transformer, this is often done via positional embeddings—either learned vectors or fixed sinusoidal patterns—added directly to the token embeddings. This addition subtly biases each token representation with information about where it appears in the sequence, without explicitly encoding absolute position in a rigid way.
+
+Now the sequence enters the core of the transformer: a stack of identical decoder blocks, each composed of multiple sublayers. The depth of the model—how many blocks are stacked—is one of the primary drivers of capability. Each block refines the representation of every token by allowing it to interact with other tokens in the sequence, subject to strict causal constraints.
+
+The defining mechanism inside each block is masked self-attention. Self-attention allows each token to look at other tokens and decide which ones matter for its representation. However, because this is a decoder-only model used for autoregressive generation, attention is masked so that a token can only attend to itself and tokens that came before it. The future is invisible. This is not a design preference but a necessity: during training, the model must not cheat by seeing the answer.
+
+To compute self-attention, each token embedding is linearly projected into three separate vectors: a query, a key, and a value. These are not metaphors; they are precise mathematical roles. The query represents what the token is looking for. The keys represent what each token offers. The values represent the information content that will be aggregated.
+
+For a given token, its query vector is compared against the key vectors of all allowed tokens (itself and earlier ones) using a dot product. This produces a set of raw attention scores. These scores are then scaled (typically by the inverse square root of the key dimension) to stabilize gradients and passed through a softmax function, turning them into a probability distribution. This distribution determines how much attention the token pays to each previous token.
+
+The values are then weighted by these attention probabilities and summed, producing a single vector: the attention output for that token. This vector is a blend of information from earlier tokens, shaped by relevance as learned by the model. Importantly, this process happens independently for every token in parallel, even though causal masking enforces directionality.
+
+Modern transformers use multi-head attention, meaning this entire attention process is repeated multiple times in parallel with different learned projections. Each head can specialize in different patterns: syntactic relationships, long-range dependencies, local continuity, or abstract semantic cues. The outputs of all heads are concatenated and projected again, producing a rich composite representation.
+
+After self-attention, the output passes through a residual connection and layer normalization. Residual connections ensure that information can flow forward even if a layer learns something unhelpful. Layer normalization stabilizes training by keeping activations within manageable ranges. These two components are essential; without them, deep transformers would be extremely difficult to train.
+
+Next comes the feed-forward network (FFN) sublayer. This is a position-wise fully connected network applied independently to each token. It typically consists of two linear layers with a nonlinearity in between (such as GELU or ReLU). While attention mixes information across tokens, the FFN transforms information within each token representation, increasing expressive power. You can think of attention as communication and the FFN as internal processing.
+
+Again, residual connections and layer normalization are applied. This completes one decoder block. The sequence representation then flows into the next block, repeating the process. With each layer, token representations become more abstract. Early layers often focus on local and surface-level patterns, while deeper layers encode higher-level structure, intent, and long-range dependencies.
+
+Crucially, at no point does the model build an explicit symbolic representation of meaning. There are no grammar rules, no parse trees, no facts stored in logical form. Everything is distributed across parameters and activations. Meaning exists only as patterns of correlation embedded in high-dimensional space.
+
+Once the sequence has passed through all decoder layers, the final token representations are fed into a language modeling head, typically a linear projection back to vocabulary size. This produces logits—unnormalized scores—for each possible next token. Applying a softmax converts these logits into probabilities. The model’s job, in training, is to maximize the probability of the correct next token given the previous ones.
+
+Training is done using teacher forcing. The model is shown the full sequence and asked to predict each token based on all preceding tokens. Loss is computed as cross-entropy between predicted probabilities and the true next tokens. Gradients flow backward through the entire network, adjusting embeddings, attention weights, and feed-forward parameters. This process is repeated across vast corpora of text, billions or trillions of tokens long.
+
+Importantly, the model is not trained to answer questions, follow instructions, or be helpful in any human sense—at least not initially. It is trained to be a good statistical predictor of text. Instruction-following and alignment come later, via fine-tuning and reinforcement learning, but the base decoder-only transformer remains the same machine at its core.
+
+During inference, generation happens one token at a time. The model takes an initial prompt, computes probabilities for the next token, samples or selects one according to a decoding strategy (greedy, top-k, top-p, temperature-scaled sampling), appends it to the sequence, and repeats. Each new token reshapes the entire attention landscape. The past is never recomputed conceptually, but it is reprocessed numerically at each step.
+
+This is where the illusion of coherence arises. Because the model conditions on everything it has previously generated, it maintains consistency not by understanding but by statistical continuity. Contradictions occur not because the model “lies,” but because different plausible continuations compete in probability space.
+
+Memory in a decoder-only transformer is not persistent. It exists only within the context window. Once tokens fall outside this window, they cease to influence attention directly. There is no long-term memory unless explicitly engineered through external mechanisms. What feels like recall is pattern completion within the available context.
+
+Despite its simplicity, the decoder-only transformer exhibits surprising emergent behaviors as scale increases. Abilities such as reasoning, abstraction, translation, and even rudimentary planning appear not because they were programmed, but because they are statistically useful for next-token prediction across diverse data. The model does not reason because it wants to; it reasons because reasoning-like patterns compress language effectively.
+
+At its deepest level, a transformer is a function approximator trained on human artifacts. It reflects structure, bias, brilliance, and confusion present in its data. It has no grounding in the physical world, no sensory experience, no self-model. Yet through attention and depth, it builds internal representations that mirror aspects of human cognition closely enough to be mistaken for it.
+
+And this is the central paradox: a machine with no understanding can produce outputs that demonstrate understanding-like behavior. A system with no intent can appear purposeful. A model with no beliefs can argue convincingly. The decoder-only transformer is not a mind—but it is a mirror, shaped by mathematics, reflecting patterns of thought back at the world that created it.
+
+And all of this—every sentence it generates, every explanation it offers—comes from the same simple loop:
+take what has been said, weigh it carefully, and predict what comes next.
+
+
+Before the decoder-only transformer existed as a dominant paradigm, before autoregressive language models became the central engine of modern AI systems, the transformer itself was born out of a very specific problem: sequence-to-sequence learning. The task was not to continue text indefinitely, but to transform one sequence into another—translate a sentence from one language to another, convert speech to text, summarize documents, answer questions based on passages. These tasks demanded a model that could read an entire input sequence, build a representation of it, and then produce an output sequence conditioned on that representation.
+
+This is where the encoder–decoder architecture enters the story.
+
+Long before transformers, sequence-to-sequence modeling was dominated by recurrent neural networks (RNNs) and later LSTMs and GRUs. These models processed sequences step by step, maintaining a hidden state that was passed forward through time. An encoder RNN would read the input sequence and compress it into a final hidden state, and a decoder RNN would then unfold that state into an output sequence. This worked, but poorly at scale. Long sequences caused information bottlenecks. Gradients vanished. Parallelization was nearly impossible. Language strained against the sequential nature of the architecture.
+
+The introduction of attention mechanisms was the first crack in this limitation. Instead of forcing the decoder to rely on a single compressed vector, attention allowed it to look back at all encoder states and selectively focus on relevant parts of the input. This was revolutionary. It acknowledged that language does not flow strictly left-to-right in a simple chain; dependencies span arbitrary distances. Attention gave models flexible access to the past.
+
+But even attention, when layered on top of RNNs, remained constrained by recurrence. Computation still marched forward one step at a time. Training was slow. Scaling was painful.
+
+Then came the pivotal moment.
+
+In 2017, the paper “Attention Is All You Need” proposed something radical: remove recurrence entirely. No RNNs. No LSTMs. No sequential hidden states. Just attention, feed-forward layers, and positional information. The transformer was born—not as a decoder-only system, but as a full encoder–decoder architecture.
+
+In this original formulation, the transformer consisted of two distinct stacks: an encoder stack and a decoder stack.
+
+The encoder was responsible for reading the input sequence. It was composed of multiple identical layers, each containing:
+
+Multi-head self-attention (unmasked)
+
+A feed-forward network
+
+Residual connections and layer normalization
+
+Unlike decoder self-attention, encoder self-attention was bidirectional. Every token could attend to every other token, both before and after it. This allowed the encoder to build a globally informed representation of the entire input. The encoder did not care about generation order. Its sole purpose was to understand the input as a whole.
+
+The output of the encoder was not a single vector, but a sequence of contextualized embeddings, one per input token. Each embedding encoded information about the token itself and its relationship to every other token in the input. This sequence formed a rich, distributed memory of the source text.
+
+The decoder, meanwhile, looked similar to what you have already read—but with a crucial addition.
+
+Like the decoder-only transformer, the decoder stack used masked self-attention to ensure autoregressive generation. Each output token could only attend to previous output tokens. But the decoder also included a second attention mechanism: encoder–decoder attention (sometimes called cross-attention).
+
+In encoder–decoder attention, the decoder’s queries came from the decoder’s current hidden states, while the keys and values came from the encoder’s outputs. This allowed the decoder to dynamically attend to different parts of the input sequence while generating each output token. Translation, for example, became a process of repeatedly asking: which part of the source sentence matters most right now?
+
+This separation of roles—encoder as reader, decoder as writer—was conceptually elegant. It mirrored human behavior. First, understand the input. Then, produce the output. The transformer did this with unprecedented efficiency and parallelism.
+
+This architecture quickly dominated tasks like:
+
+Machine translation
+
+Summarization
+
+Question answering
+
+Speech recognition
+
+Multimodal sequence mapping
+
+Models like Transformer-base, Transformer-big, and later BERT, T5, and BART all emerged from this lineage.
+
+However, the encoder–decoder transformer also revealed something unexpected.
+
+When researchers examined what parts of the architecture contributed most to performance gains, they noticed that scale mattered more than specialization. Deeper models, wider embeddings, more attention heads—these factors often mattered more than architectural symmetry. And crucially, they noticed that language modeling alone—predicting the next token—was sufficient to learn an enormous amount of structure about language.
+
+This realization led to a divergence.
+
+On one branch, researchers doubled down on the encoder. This produced models like BERT, which used only the encoder stack and were trained with masked language modeling. These models excelled at understanding tasks but could not generate text naturally.
+
+On the other branch, researchers focused on the decoder. They removed the encoder entirely and trained large autoregressive models on massive corpora. This produced GPT-style models, which sacrificed explicit bidirectional input understanding in favor of generative power.
+
+Why did decoder-only models win in the LLM era?
+
+The answer lies in simplicity and scalability.
+
+A decoder-only transformer does one thing extremely well: next-token prediction. It requires no architectural switching between modes. Training and inference align perfectly. The same objective governs everything. This makes it easy to scale to trillions of tokens and hundreds of billions of parameters.
+
+Moreover, prompt-based conditioning effectively recreates the encoder role inside the context window. The model “reads” the prompt using causal attention and then continues it. The boundary between input and output becomes conceptual rather than architectural.
+
+In a sense, the encoder was not removed—it was absorbed into the prefix.
+
+Yet the influence of the encoder–decoder era never vanished. Cross-attention lives on in multimodal models. Instruction tuning echoes sequence-to-sequence training. Retrieval-augmented generation mimics encoder memory injection. The ghost of the encoder remains embedded in how we structure prompts, tasks, and interfaces.
+
+What began as a translation model became a universal text engine.
+
+And so, when you examine a modern decoder-only LLM—when you trace its attention weights, its layer activations, its probabilistic outputs—you are not just looking at a predictor of text. You are seeing the distilled history of:
+
+Recurrent sequence models
+
+Attention as alignment
+
+Encoder–decoder separation
+
+The collapse of roles into a single autoregressive loop
+
+All compressed into a machine that does not know what language is, yet operates fluently within it.
+
+The transformer did not become powerful because it understood meaning.
+It became powerful because meaning was useful for prediction.
+
+And that is the final thread connecting everything you have read: from encoder–decoder architectures to decoder-only LLMs, from attention to scale, from translation to conversation.
+
+At every stage, the same principle held:
+
+If a pattern helps predict what comes next, it will be learned.
+
+Everything else—coherence, reasoning, explanation, even this very text—is an emergent consequence of that single rule, repeated across layers, tokens, and time.
